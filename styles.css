@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background-color: #f7f5f1;
+    color: #2a0e0e;
+    overflow-x: hidden;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* =============================================
+   HEADER/HERO SECTION
+   ============================================= */
+.header-section {
+    background: linear-gradient(to bottom, #2a0e0e 0%, #3d1a1a 50%, #6b4a4a 80%, #918989 100%);
+    min-height: 929px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 40px 60px 20px;
+    width: 100%;
+}
+
+.nav-link {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #f7f5f1;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 1.15;
+    transition: opacity 0.3s;
+    padding-top: 40px;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+.header-logo {
+    width: 260px;
+    flex-shrink: 0;
+}
+
+.header-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hero Content */
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    flex: 1;
+    padding: 0px 100px 100px 100px;
+    align-items: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero-title {
+    font-family: 'Yeseva One', serif;
+    font-size: clamp(40px, 5vw, 61px);
+    line-height: 1.05;
+    color: #f7f5f1;
+    max-width: 400px;
+}
+
+.hero-button {
+    background-color: rgba(106, 48, 48, 0.8);
+    padding: 14px 28px;
+    border-radius: 0 30px 0 0;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    border: 1px solid rgba(247, 245, 241, 0.3);
+}
+
+.hero-button:hover {
+    background-color: rgba(138, 64, 64, 0.9);
+}
+
+.hero-button-text {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    color: #f7f5f1;
+    text-align: center;
+    line-height: 1.15;
+}
+
+/* Hero Images */
+.hero-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    align-items: start;
+}
+
+.hero-image-1 {
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    margin-top: 80px;
+}
+
+.hero-image-1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-image-2 {
+    border-radius: 0 30px 0 0;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    margin-left: -20px;
+}
+
+.hero-image-2 img {
+    width: 100%;
+    height: 407px;
+    display: block;
+    object-fit: cover;
+    border-radius: 0px 70px 0px 0px;
+}
+
+/* =============================================
+   ABOUT CREATOR SECTION
+   ============================================= */
+.about-section {
+    padding: 80px 40px;
+    background-color: #f7f5f1;
+}
+
+.about-title {
+    font-family: 'Yeseva One', serif;
+    font-size: clamp(36px, 4vw, 49px);
+    line-height: 1.05;
+    color: #2a0e0e;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-quote {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: clamp(28px, 3vw, 42px);
+    line-height: 1;
+    color: #2a0e0e;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-image-wrapper {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.about-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.about-text {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #2a0e0e;
+}
+
+/* =============================================
+   FEATURED PRODUCTS SECTION
+   ============================================= */
+.featured-section {
+    padding: 80px 40px;
+    background-color: #f7f5f1;
+}
+
+.featured-title {
+    font-family: 'Yeseva One', serif;
+    font-size: clamp(36px, 4vw, 49px);
+    line-height: 1.05;
+    color: #2a0e0e;
+    margin-bottom: 60px;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.featured-image-wrapper {
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #d2b0b0;
+    aspect-ratio: 3/4;
+}
+
+.featured-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.craftsmanship {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(210, 176, 176, 0.2);
+    border-radius: 20px;
+}
+
+.craftsmanship-title {
+    font-family: 'Yeseva One', serif;
+    font-size: clamp(28px, 3vw, 39px);
+    line-height: 1.05;
+    color: #2a0e0e;
+    margin-bottom: 20px;
+}
+
+.craftsmanship-text {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #2a0e0e;
+}
+
+/* =============================================
+   COLLECTIONS SECTION
+   ============================================= */
+.collections-section {
+    padding: 80px 40px;
+    background-color: #cabcac;
+}
+
+.collections-title {
+    font-family: 'Yeseva One', serif;
+    font-size: clamp(36px, 4vw, 49px);
+    line-height: 1.05;
+    color: #000;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.collection-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.collection-image-container {
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #d2b0b0;
+}
+
+.collection-image-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.collection-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.collection-title {
+    font-family: 'Yeseva One', serif;
+    font-size: clamp(24px, 2.5vw, 31px);
+    line-height: 1.05;
+    color: #000;
+}
+
+.collection-text {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000;
+}
+
+/* =============================================
+   INSTAGRAM SECTION
+   ============================================= */
+.instagram-section {
+    padding: 80px 40px;
+    background-color: #f7f5f1;
+}
+
+.instagram-title {
+    font-family: 'Yeseva One', serif;
+    font-size: clamp(36px, 4vw, 49px);
+    line-height: 1.05;
+    color: #000;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instagram-image {
+    overflow: hidden;
+    border-radius: 20px 0 0 0;
+    background-color: #d2b0b0;
+    aspect-ratio: 1/1;
+}
+
+.instagram-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.instagram-handle {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: clamp(20px, 2vw, 25px);
+    line-height: 1.15;
+    color: #000;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.footer {
+    padding: 60px 40px;
+    background-color: #f7f5f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-contact {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-contact-title {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+.footer-contact-info {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.footer-contact-info p {
+    margin-bottom: 8px;
+}
+
+.footer-logo {
+    width: 180px;
+    flex-shrink: 0;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* =============================================
+   RESPONSIVE DESIGN
+   ============================================= */
+@media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .hero-text {
+        align-items: center;
+    }
+
+    .hero-title {
+        max-width: 100%;
+    }
+
+    .hero-images {
+        grid-template-columns: 1fr 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .hero-image-2 {
+        margin-top: 0;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .collections-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .header-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .nav-link {
+        padding-top: 0;
+    }
+
+    .header-logo {
+        order: -1;
+        width: 200px;
+    }
+
+    .hero-content {
+        padding: 30px 20px 60px;
+    }
+
+    .hero-images {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-section,
+    .featured-section,
+    .collections-section,
+    .instagram-section {
+        padding: 60px 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .featured-grid,
+    .instagram-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .about-title,
+    .featured-title,
+    .collections-title,
+    .instagram-title {
+        font-size: 28px;
+    }
+
+    .about-quote {
+        font-size: 24px;
+    }
+
+    .header-logo {
+        width: 160px;
+    }
+}
