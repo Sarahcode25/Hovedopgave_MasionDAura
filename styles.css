@@ -362,7 +362,11 @@ main {
 .collections-section {
     padding: 80px 40px;
     background-color: #cabcac;
-    max-width: 1440px;
+    width: 100%;
+}
+
+.collections-inner {
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -377,10 +381,8 @@ main {
 
 .collections-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
 }
 
 .collection-block {
@@ -587,8 +589,13 @@ main {
         border-radius: 0 80px 0 0;
     }
 
+    .collections-section {
+        padding: 60px 40px;
+    }
+
     .collections-grid {
         grid-template-columns: 1fr;
+        gap: 60px;
     }
 
     .featured-section {
