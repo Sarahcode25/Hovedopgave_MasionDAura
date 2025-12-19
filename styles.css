@@ -12,8 +12,6 @@ body {
 }
 
 main {
-    max-width: 1440px;
-    margin: 0 auto;
     width: 100%;
 }
 
@@ -36,6 +34,8 @@ main {
     gap: 60px;
     padding: 40px 60px 20px;
     width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .nav-link {
@@ -73,6 +73,9 @@ main {
     flex: 1;
     padding: 0px 100px 100px 100px;
     align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .hero-text {
@@ -160,6 +163,8 @@ main {
 .about-section {
     padding: 80px 40px;
     background-color: #f7f5f1;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .about-title {
@@ -220,6 +225,8 @@ main {
 .featured-section {
     padding: 80px 40px;
     background-color: #f7f5f1;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .featured-title {
@@ -280,6 +287,8 @@ main {
 .collections-section {
     padding: 80px 40px;
     background-color: #cabcac;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .collections-title {
@@ -345,6 +354,8 @@ main {
 .instagram-section {
     padding: 80px 40px;
     background-color: #f7f5f1;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .instagram-title {
@@ -401,6 +412,8 @@ main {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 40px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .footer-contact {
