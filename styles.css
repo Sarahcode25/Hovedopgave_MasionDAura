@@ -554,33 +554,32 @@
 .katalog-page .katalog-nav {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 60px;
-  padding: 0 60px;
+  padding: 40px 60px 20px;
   width: 100%;
-  background-color: #eee2e2;
-  height: 125px;
+  background-color: #601e1e;
 }
 .katalog-page .katalog-nav-link {
   font-family: "Barlow", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  color: #2a0e0e;
+  color: #f7f5f1;
   text-decoration: none;
   transition: opacity 0.3s ease;
+  padding-top: 40px;
 }
 .katalog-page .katalog-nav-link:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 .katalog-page .katalog-logo {
-  width: 180px;
+  width: 260px;
   flex-shrink: 0;
-  text-align: center;
 }
-.katalog-page .katalog-logo-text {
-  font-family: "Yeseva One", serif;
-  font-size: 40px;
-  color: #2a0e0e;
+.katalog-page .katalog-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .katalog-page .katalog-hero {
   background-color: #601e1e;
@@ -616,6 +615,7 @@
   padding: 40px 0;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 .katalog-page .katalog-filters::after {
   content: "";
@@ -637,6 +637,7 @@
   overflow-y: hidden;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  width: 100%;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -960,8 +961,17 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-.katalog-page .udvalgt-header {
-  margin-bottom: 40px;
+.katalog-page .udvalgt-layout {
+  display: grid;
+  grid-template-columns: 588px 588px;
+  gap: 24px;
+  align-items: end;
+}
+.katalog-page .udvalgt-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: flex-end;
 }
 .katalog-page .udvalgt-title {
   font-family: "Yeseva One", serif;
@@ -975,22 +985,21 @@
   font-size: 20px;
   line-height: 1.5;
   color: #2a0e0e;
-  max-width: 588px;
 }
-.katalog-page .udvalgt-grid {
+.katalog-page .udvalgt-small-products {
   display: grid;
-  grid-template-columns: repeat(4, 282px);
+  grid-template-columns: 282px 282px;
   gap: 24px;
-  justify-content: start;
+}
+.katalog-page .udvalgt-right {
+  display: grid;
+  grid-template-columns: 282px 282px;
+  gap: 24px;
 }
 .katalog-page .udvalgt-item {
   position: relative;
   overflow: hidden;
   background-color: #bfa1a1;
-  height: 282px;
-}
-.katalog-page .udvalgt-item:nth-child(3), .katalog-page .udvalgt-item:nth-child(4) {
-  height: 487px;
 }
 .katalog-page .udvalgt-item img {
   width: 100%;
@@ -998,8 +1007,19 @@
   object-fit: cover;
   display: block;
 }
-.katalog-page .udvalgt-item:nth-child(4) {
-  border-radius: 120px 0 0 0;
+.katalog-page .udvalgt-item-small {
+  width: 282px;
+  height: 282px;
+}
+.katalog-page .udvalgt-item-tall {
+  width: 282px;
+  height: 487px;
+}
+.katalog-page .udvalgt-item-rounded {
+  border-radius: 0 120px 0 0;
+}
+.katalog-page .udvalgt-item-rounded img {
+  border-radius: 0 120px 0 0;
 }
 .katalog-page .udvalgt-product-info {
   position: absolute;
@@ -1063,6 +1083,9 @@
 .katalog-page .dinero-item-4 {
   grid-column: 1/3;
   width: 792px;
+}
+.katalog-page .dinero-item-4 img {
+  transform: scaleX(-1);
 }
 .katalog-page .dinero-coming-soon {
   position: relative;

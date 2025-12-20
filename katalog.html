@@ -15,7 +15,7 @@
     <nav class="katalog-nav">
         <a href="#kontakt" class="katalog-nav-link">Kontakt</a>
         <div class="katalog-logo">
-            <span class="katalog-logo-text">LOGO</span>
+            <img src="img/logo-header.svg" alt="Maison d'Aure Logo">
         </div>
         <a href="om-os.html" class="katalog-nav-link">Om os</a>
     </nav>
@@ -175,37 +175,45 @@
     <!-- Udvalgt til dig Section -->
     <section class="katalog-udvalgt">
         <div class="katalog-udvalgt-inner">
-            <div class="udvalgt-header">
-                <h2 class="udvalgt-title">Udvalgt til dig</h2>
-                <p class="udvalgt-intro">Et udvalg af hestesmykker, sammensat med blik for form, ro og balance. Smykker i dansk design, der passer naturligt ind i dit univers.</p>
-            </div>
-            <div class="udvalgt-grid">
-                <div class="udvalgt-item">
-                    <img src="img/katalog-dsc2593.png" alt="Fidélité">
-                    <div class="udvalgt-product-info">
-                        <span class="udvalgt-product-name">Fidélité - Loyalitet Broche</span>
-                        <span class="udvalgt-product-price">995 DKK*</span>
+            <div class="udvalgt-layout">
+                <!-- Left column: Header + 2 square products -->
+                <div class="udvalgt-left">
+                    <div class="udvalgt-header">
+                        <h2 class="udvalgt-title">Udvalgt til dig</h2>
+                        <p class="udvalgt-intro">Et udvalg af hestesmykker, sammensat med blik for form, ro og balance. Smykker i dansk design, der passer naturligt ind i dit univers.</p>
+                    </div>
+                    <div class="udvalgt-small-products">
+                        <div class="udvalgt-item udvalgt-item-small">
+                            <img src="img/udvalgt-fidelite.png" alt="Fidélité">
+                            <div class="udvalgt-product-info">
+                                <span class="udvalgt-product-name">Fidélité - Loyalitet Broche</span>
+                                <span class="udvalgt-product-price">995 DKK*</span>
+                            </div>
+                        </div>
+                        <div class="udvalgt-item udvalgt-item-small">
+                            <img src="img/udvalgt-lelien.png" alt="Le Lien">
+                            <div class="udvalgt-product-info">
+                                <span class="udvalgt-product-name">Le Lien - Båndet Broche</span>
+                                <span class="udvalgt-product-price">6.500 DKK*</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="udvalgt-item">
-                    <img src="img/katalog-dsc2593.png" alt="Le Lien">
-                    <div class="udvalgt-product-info">
-                        <span class="udvalgt-product-name">Le Lien - Båndet Broche</span>
-                        <span class="udvalgt-product-price">6.500 DKK*</span>
+                <!-- Right column: 2 tall products -->
+                <div class="udvalgt-right">
+                    <div class="udvalgt-item udvalgt-item-tall">
+                        <img src="img/udvalgt-cercle.png" alt="Cercle d'Or">
+                        <div class="udvalgt-product-info">
+                            <span class="udvalgt-product-name">Cercle d'Or - Gylden Cirkel Halskæde</span>
+                            <span class="udvalgt-product-price">795 DKK*</span>
+                        </div>
                     </div>
-                </div>
-                <div class="udvalgt-item">
-                    <img src="img/katalog-dsc2530.png" alt="Cercle d'Or">
-                    <div class="udvalgt-product-info">
-                        <span class="udvalgt-product-name">Cercle d'Or - Gylden Cirkel Halskæde</span>
-                        <span class="udvalgt-product-price">795 DKK*</span>
-                    </div>
-                </div>
-                <div class="udvalgt-item">
-                    <img src="img/katalog-dsc2616.png" alt="Gardien">
-                    <div class="udvalgt-product-info">
-                        <span class="udvalgt-product-name">Gardien - Beskytter Broche </span>
-                        <span class="udvalgt-product-price">995 DKK*</span>
+                    <div class="udvalgt-item udvalgt-item-tall udvalgt-item-rounded">
+                        <img src="img/udvalgt-gardien.png" alt="Gardien">
+                        <div class="udvalgt-product-info">
+                            <span class="udvalgt-product-name">Gardien - Beskytter Broche</span>
+                            <span class="udvalgt-product-price">995 DKK*</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -258,46 +266,17 @@
     </section>
 
     <!-- Footer -->
-    <footer class="katalog-footer" id="kontakt">
-        <div class="footer-column footer-info">
-            <h5 class="footer-column-title">Lorem ipsum</h5>
-            <div class="footer-info-items">
-                <div class="footer-info-item">
-                    <p class="footer-info-title">Lorem ipsum</p>
-                    <p class="footer-info-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. </p>
-                </div>
-                <div class="footer-info-item">
-                    <p class="footer-info-title">Lorem ipsum</p>
-                    <p class="footer-info-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. </p>
-                </div>
-                <div class="footer-info-item">
-                    <p class="footer-info-title">Lorem ipsum</p>
-                    <p class="footer-info-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. </p>
-                </div>
+    <footer class="footer" id="kontakt">
+        <div class="footer-contact">
+            <h5 class="footer-contact-title">Kontaktinfo</h5>
+            <div class="footer-contact-info">
+                <p>Email: Maisondaure@mail.dk</p>
+                <p>Telefonnummer: +45 23 12 20 25</p>
+                <p>Adresse: Smykkevej 1<br>1359, Nykøbing F</p>
             </div>
         </div>
-        <div class="footer-column footer-links">
-            <h5 class="footer-column-title">Lorem ipsum</h5>
-            <ul class="footer-link-list">
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-            </ul>
-        </div>
-        <div class="footer-column footer-right">
-            <div class="footer-social-links">
-                <span>Lorem ipsum</span>
-                <span>Lorem ipsum</span>
-                <span>Lorem ipsum</span>
-            </div>
-            <div class="footer-divider"></div>
-            <p class="footer-description">Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. Ipsum dolor sit amet consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien.</p>
-        </div>
-        <div class="footer-logo-large">
-            <img src="img/katalog-footer-logo.svg" alt="Maison d'Aure Logo">
+        <div class="footer-logo">
+            <img src="img/logo-footer.svg" alt="Maison d'Aure Logo">
         </div>
     </footer>
     </main>
