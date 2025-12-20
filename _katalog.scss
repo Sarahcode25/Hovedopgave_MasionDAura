@@ -115,6 +115,7 @@
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
         width: 100%;
+        justify-content: flex-start;
         
         // Skjul scrollbar
         scrollbar-width: none; // Firefox
