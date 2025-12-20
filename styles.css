@@ -710,8 +710,8 @@
 }
 .katalog-page .duval-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
   gap: 24px;
 }
 .katalog-page .duval-item {
@@ -741,132 +741,156 @@
   grid-row: 1;
   border-radius: 120px 0 0 0;
 }
-.katalog-page .duval-product-4 {
+.katalog-page .duval-col1-wrapper {
   grid-column: 1;
   grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.katalog-page .duval-col1-wrapper .duval-product-4 {
   border-radius: 0;
-  height: 384px;
+  aspect-ratio: 1/1;
+  flex-shrink: 0;
+}
+.katalog-page .duval-col1-wrapper .duval-textbox-1 {
+  padding: 20px 0;
+  background-color: transparent;
+  flex-shrink: 0;
+}
+.katalog-page .duval-col1-wrapper .duval-textbox-1 h3 {
+  font-family: "Yeseva One", serif;
+  font-size: 25px;
+  line-height: 1.05;
+  color: #2a0e0e;
+  margin-bottom: 8px;
+}
+.katalog-page .duval-col1-wrapper .duval-textbox-1 p {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2a0e0e;
+}
+.katalog-page .duval-col1-wrapper .duval-atmosphere-image {
+  flex: 1;
+  aspect-ratio: auto;
+  min-height: 300px;
+}
+.katalog-page .duval-col1-wrapper .duval-atmosphere-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.katalog-page .duval-col23-wrapper {
+  grid-column: 2/4;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 24px;
 }
 .katalog-page .duval-feature-section {
-  grid-column: 2/4;
-  grid-row: 2/4;
+  grid-column: 1/3;
+  grid-row: 1;
   background-image: url("img/katalog-rectangle1.png");
-  background-size: cover;
-  background-position: center;
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
   border-radius: 0 0 120px 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  --bg-aspect-ratio: 1.5;
+  --text-padding: 60px;
+  --heading-line-height: 26.25px;
+  --body-line-height: 24px;
+  --heading-lines: 2;
+  --body-lines: 8;
+  --text-height: calc(
+      var(--heading-lines) * var(--heading-line-height) +
+      var(--body-lines) * var(--body-line-height) +
+      var(--text-padding)
+  );
+  min-height: calc(480px + var(--text-height));
+}
+.katalog-page .duval-feature-col1 {
+  display: contents;
+}
+.katalog-page .duval-feature-col1 .duval-feature-text {
+  grid-column: 1;
+  grid-row: 1;
   padding: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  align-self: end;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
-.katalog-page .duval-feature-inner {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.katalog-page .duval-feature-text {
-  max-width: 304px;
-}
-.katalog-page .duval-feature-text h3 {
+.katalog-page .duval-feature-col1 .duval-feature-text h3 {
   font-family: "Yeseva One", serif;
   font-size: 25px;
   line-height: 1.05;
   color: #f7f5f1;
   margin-bottom: 8px;
 }
-.katalog-page .duval-feature-text p {
+.katalog-page .duval-feature-col1 .duval-feature-text p {
   font-family: "Inter", "Barlow", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #f7f5f1;
 }
-.katalog-page .duval-feature-bottom {
-  display: flex;
-  gap: 24px;
-  flex: 1;
-  align-items: stretch;
-}
-.katalog-page .duval-feature-bottom .duval-product-5 {
-  width: 320px;
-  flex-shrink: 0;
+.katalog-page .duval-feature-col1 .duval-product-5 {
+  grid-column: 1;
+  grid-row: 2;
   border: 12px solid #f7f5f1;
   border-left: none;
   border-bottom: none;
   border-radius: 0;
   box-sizing: border-box;
-  align-self: flex-end;
-  height: auto;
-  aspect-ratio: 1;
+  width: 100%;
+  height: 100%;
+  align-self: stretch;
+  justify-self: stretch;
 }
-.katalog-page .duval-feature-right {
+.katalog-page .duval-feature-col2 {
+  grid-column: 2;
+  grid-row: 1/3;
   display: flex;
   flex-direction: column;
-  flex: 1;
-}
-.katalog-page .duval-horse-muzzle {
+  justify-content: flex-end;
   width: 100%;
-  flex: 1;
-  object-fit: cover;
+  box-sizing: border-box;
+}
+.katalog-page .duval-feature-col2 .duval-textbox-2 {
+  background-color: transparent;
+  padding: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.katalog-page .duval-feature-col2 .duval-textbox-2 h3 {
+  font-family: "Yeseva One", serif;
+  font-size: 25px;
+  line-height: 1.05;
+  color: #2a0e0e;
+  margin-bottom: 8px;
+}
+.katalog-page .duval-feature-col2 .duval-textbox-2 p {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2a0e0e;
+}
+.katalog-page .duval-col23-wrapper .duval-product-6 {
+  grid-column: 1;
+  grid-row: 2;
   border-radius: 0;
-  min-height: 200px;
 }
-.katalog-page .duval-feature-right .duval-textbox-2 {
-  background-color: transparent;
-  padding: 16px 0 0 0;
-  flex-shrink: 0;
-}
-.katalog-page .duval-feature-right .duval-textbox-2 h3 {
-  font-family: "Yeseva One", serif;
-  font-size: 25px;
-  line-height: 1.05;
-  color: #2a0e0e;
-  margin-bottom: 8px;
-}
-.katalog-page .duval-feature-right .duval-textbox-2 p {
-  font-family: "Inter", "Barlow", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #2a0e0e;
-}
-.katalog-page .duval-textbox-1 {
-  grid-column: 1;
-  grid-row: 3;
-  padding: 20px 0;
-  background-color: transparent;
-  height: auto;
-  align-self: start;
-}
-.katalog-page .duval-textbox-1 h3 {
-  font-family: "Yeseva One", serif;
-  font-size: 25px;
-  line-height: 1.05;
-  color: #2a0e0e;
-  margin-bottom: 8px;
-}
-.katalog-page .duval-textbox-1 p {
-  font-family: "Inter", "Barlow", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #2a0e0e;
-}
-.katalog-page .duval-atmosphere-image {
-  grid-column: 1;
-  grid-row: 4/6;
-  height: auto;
-}
-.katalog-page .duval-atmosphere-image img {
-  height: 100%;
-}
-.katalog-page .duval-product-6 {
+.katalog-page .duval-col23-wrapper .duval-product-7 {
   grid-column: 2;
-  grid-row: 5;
-  border-radius: 0;
-  align-self: end;
-}
-.katalog-page .duval-product-7 {
-  grid-column: 3;
-  grid-row: 5;
+  grid-row: 2;
   border-radius: 0 0 0 120px;
-  align-self: end;
 }
 .katalog-page .product-info {
   position: absolute;

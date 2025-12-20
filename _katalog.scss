@@ -203,12 +203,12 @@
     }
 
     // =============================================
-    // DÜVAL GRID LAYOUT
+    // DÜVAL GRID LAYOUT - 3 columns, 2 rows
     // =============================================
     .duval-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr; // 3 equal columns
+        grid-template-rows: auto auto;       // Row 1: top products, Row 2: complex content
         gap: 24px;
     }
 
@@ -245,156 +245,196 @@
         border-radius: $radius-lg 0 0 0; // Top-left corner
     }
 
-    // Row 2: Le Lien
-    .duval-product-4 {
+    // =============================================
+    // COLUMN 1 WRAPPER - Sub-grid for Le Lien, Textbox, Atmosphere
+    // Spans row 2, column 1
+    // =============================================
+    .duval-col1-wrapper {
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .duval-col1-wrapper .duval-product-4 {
+        border-radius: 0;
+        aspect-ratio: 1 / 1;
+        flex-shrink: 0;
+    }
+
+    .duval-col1-wrapper .duval-textbox-1 {
+        padding: $spacing-md 0;
+        background-color: transparent;
+        flex-shrink: 0;
+
+        h3 {
+            font-family: $font-heading;
+            font-size: $font-size-h5;
+            line-height: $line-height-heading;
+            color: $color-text-dark;
+            margin-bottom: $spacing-xs;
+        }
+
+        p {
+            font-family: 'Inter', $font-body;
+            font-size: $font-size-body-small;
+            line-height: 1.5;
+            color: $color-text-dark;
+        }
+    }
+
+    .duval-col1-wrapper .duval-atmosphere-image {
+        flex: 1; // Fill remaining space
+        aspect-ratio: auto; // Override square aspect ratio
+        min-height: 300px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // =============================================
+    // COLUMN 2-3 WRAPPER - Sub-grid for Feature + Bottom products
+    // Spans row 2, columns 2-3
+    // =============================================
+    .duval-col23-wrapper {
+        grid-column: 2 / 4; // Span columns 2 and 3
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr; // Two equal columns for bottom products
+        grid-template-rows: auto auto;   // Feature section + bottom products
+        gap: 24px;
+    }
+
+    // Feature section with background (spans both columns in col23-wrapper)
+    // Background image dimensions: 1947x1298 (aspect ratio ~1.5:1)
+    .duval-feature-section {
+        grid-column: 1 / 3; // Span both columns in the wrapper
+        grid-row: 1;
+        background-image: url('img/katalog-rectangle1.png');
+        background-size: 100% auto;
+        background-position: top center;
+        background-repeat: no-repeat;
+        border-radius: 0 0 $radius-lg 0;
+        padding: 0;
+        
+        // Grid layout: 2 columns (50% each), 2 rows (50% each)
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        
+        // Dynamic height calculation
+        --bg-aspect-ratio: 1.5;
+        --text-padding: 60px;
+        --heading-line-height: 26.25px;
+        --body-line-height: 24px;
+        --heading-lines: 2;
+        --body-lines: 8;
+        
+        --text-height: calc(
+            var(--heading-lines) * var(--heading-line-height) + 
+            var(--body-lines) * var(--body-line-height) + 
+            var(--text-padding)
+        );
+        
+        min-height: calc(480px + var(--text-height));
+    }
+
+    // Column 1: Text (row 1) + Product (row 2) - each row 50% height
+    .duval-feature-col1 {
+        display: contents; // Let children participate directly in the grid
+
+        // Row 1, Column 1: Text with padding - 100% width, aligned to bottom
+        .duval-feature-text {
+            grid-column: 1;
+            grid-row: 1;
+            padding: 40px;
+            width: 100%;
+            box-sizing: border-box;
+            align-self: end; // Align text to bottom of cell
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            h3 {
+                font-family: $font-heading;
+                font-size: $font-size-h5;
+                line-height: $line-height-heading;
+                color: $color-text-light;
+                margin-bottom: $spacing-xs;
+            }
+
+            p {
+                font-family: 'Inter', $font-body;
+                font-size: $font-size-body-small;
+                line-height: 1.5;
+                color: $color-text-light;
+            }
+        }
+
+        // Row 2, Column 1: Promesse product - NO padding, white border, 100% width
+        .duval-product-5 {
+            grid-column: 1;
+            grid-row: 2;
+            border: 12px solid $color-background;
+            border-left: none;
+            border-bottom: none;
+            border-radius: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            align-self: stretch;
+            justify-self: stretch;
+        }
+    } // End of .duval-feature-col1
+
+    // Column 2: Text at bottom (spans both rows, extends past background image)
+    .duval-feature-col2 {
+        grid-column: 2;
+        grid-row: 1 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; // Text at bottom
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .duval-feature-col2 .duval-textbox-2 {
+        background-color: transparent;
+        padding: 40px;
+        width: 100%;
+        box-sizing: border-box;
+
+        h3 {
+            font-family: $font-heading;
+            font-size: $font-size-h5;
+            line-height: $line-height-heading;
+            color: $color-text-dark;
+            margin-bottom: $spacing-xs;
+        }
+
+        p {
+            font-family: 'Inter', $font-body;
+            font-size: $font-size-body-small;
+            line-height: 1.5;
+            color: $color-text-dark;
+        }
+    }
+
+    // Bottom products in col23-wrapper
+    .duval-col23-wrapper .duval-product-6 {
         grid-column: 1;
         grid-row: 2;
         border-radius: 0;
-        height: 384px;
     }
 
-    // Feature section with background (spans 2 cols, 2 rows)
-    .duval-feature-section {
-        grid-column: 2 / 4;
-        grid-row: 2 / 4;
-        background-image: url('img/katalog-rectangle1.png');
-        background-size: cover;
-        background-position: center;
-        border-radius: 0 0 $radius-lg 0;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .duval-feature-inner {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
-
-    .duval-feature-text {
-        max-width: 304px;
-
-        h3 {
-            font-family: $font-heading;
-            font-size: $font-size-h5;
-            line-height: $line-height-heading;
-            color: $color-text-light;
-            margin-bottom: $spacing-xs;
-        }
-
-        p {
-            font-family: 'Inter', $font-body;
-            font-size: $font-size-body-small;
-            line-height: 1.5;
-            color: $color-text-light;
-        }
-    }
-
-    .duval-feature-bottom {
-        display: flex;
-        gap: 24px;
-        flex: 1;
-        align-items: stretch;
-    }
-
-    .duval-feature-bottom .duval-product-5 {
-        width: 320px;
-        flex-shrink: 0;
-        border: 12px solid $color-background;
-        border-left: none;
-        border-bottom: none;
-        border-radius: 0;
-        box-sizing: border-box;
-        align-self: flex-end;
-        height: auto;
-        aspect-ratio: 1;
-    }
-
-    .duval-feature-right {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-    }
-
-    .duval-horse-muzzle {
-        width: 100%;
-        flex: 1;
-        object-fit: cover;
-        border-radius: 0;
-        min-height: 200px;
-    }
-
-    .duval-feature-right .duval-textbox-2 {
-        background-color: transparent;
-        padding: 16px 0 0 0;
-        flex-shrink: 0;
-
-        h3 {
-            font-family: $font-heading;
-            font-size: $font-size-h5;
-            line-height: $line-height-heading;
-            color: $color-text-dark;
-            margin-bottom: $spacing-xs;
-        }
-
-        p {
-            font-family: 'Inter', $font-body;
-            font-size: $font-size-body-small;
-            line-height: 1.5;
-            color: $color-text-dark;
-        }
-    }
-
-    // Textbox under Le Lien
-    .duval-textbox-1 {
-        grid-column: 1;
-        grid-row: 3;
-        padding: $spacing-md 0;
-        background-color: transparent;
-        height: auto;
-        align-self: start;
-
-        h3 {
-            font-family: $font-heading;
-            font-size: $font-size-h5;
-            line-height: $line-height-heading;
-            color: $color-text-dark;
-            margin-bottom: $spacing-xs;
-        }
-
-        p {
-            font-family: 'Inter', $font-body;
-            font-size: $font-size-body-small;
-            line-height: 1.5;
-            color: $color-text-dark;
-        }
-    }
-
-    // Atmosphere image (spans 2 rows)
-    .duval-atmosphere-image {
-        grid-column: 1;
-        grid-row: 4 / 6;
-        height: auto;
-
-        img {
-            height: 100%;
-        }
-    }
-
-    // Bottom products
-    .duval-product-6 {
+    .duval-col23-wrapper .duval-product-7 {
         grid-column: 2;
-        grid-row: 5;
-        border-radius: 0;
-        align-self: end;
-    }
-
-    .duval-product-7 {
-        grid-column: 3;
-        grid-row: 5;
+        grid-row: 2;
         border-radius: 0 0 0 $radius-lg;
-        align-self: end;
     }
 
     // Product info overlay - Smooth gradient
