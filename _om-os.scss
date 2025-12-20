@@ -1,0 +1,685 @@
+// =============================================
+// OM OS SIDE - SPECIFIKKE STYLES
+// Bruger .page-om-os wrapper for at undgå konflikter
+// =============================================
+
+.page-om-os {
+    // Hero tagline og subtitle
+    .hero-tagline {
+        font-family: $font-body;
+        font-weight: 600;
+        font-size: $font-size-h5;
+        color: $color-text-light;
+        line-height: $line-height-body;
+        margin-bottom: $spacing-sm;
+    }
+
+    .hero-subtitle {
+        font-family: $font-body;
+        font-size: $font-size-body;
+        color: $color-text-light;
+        line-height: $line-height-body;
+        margin-top: $spacing-sm;
+        max-width: 690px;
+    }
+
+    .hero-title-single {
+        white-space: nowrap;
+    }
+
+    // Om os hero grid layout
+    .about-hero-grid {
+        display: grid;
+        grid-template-columns: 690px 282px;
+        gap: $spacing-md;
+        max-width: $max-width-content;
+        margin: 0 auto;
+        padding: 0 $spacing-section $spacing-xxl;
+        align-items: end;
+    }
+
+    .about-hero-left {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-sm;
+    }
+
+    .about-hero-main-image {
+        margin-top: $spacing-lg;
+        width: 100%;
+        height: 380px;
+        border-radius: 0 $radius-lg 0 $radius-lg;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .about-hero-right {
+        display: flex;
+        align-items: flex-start;
+        align-self: start;
+        margin-top: 100px;
+    }
+
+    .about-hero-side-image {
+        width: 282px;
+        height: 583px;
+        border-radius: $radius-lg 0 0 0;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    // Brand Story Section
+    .brand-story-section {
+        padding: $spacing-xxl $spacing-section;
+        background-color: $color-background;
+    }
+
+    .brand-story-content {
+        max-width: $max-width-inner;
+        margin: 0 auto;
+    }
+
+    // Øverste del med titel + tekst (venstre) og stald-billede (højre)
+    .brand-story-top {
+        display: grid;
+        grid-template-columns: 1fr 384px;
+        gap: $spacing-xl;
+        align-items: start;
+        margin-bottom: $spacing-lg;
+    }
+
+    .brand-story-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .brand-story-title {
+        font-family: $font-heading;
+        font-size: $font-size-h2;
+        color: $color-text-dark;
+        line-height: $line-height-heading;
+        margin-bottom: $spacing-lg;
+    }
+
+    .brand-story-subtitle {
+        font-family: $font-heading;
+        font-size: $font-size-h5;
+        font-style: italic;
+        color: $color-text-dark;
+        line-height: 1.2;
+        margin-bottom: $spacing-sm;
+    }
+
+    .brand-story-text {
+        font-family: $font-body;
+        font-size: $font-size-body;
+        color: $color-text-dark;
+        line-height: $line-height-body;
+        margin-bottom: $spacing-md;
+    }
+
+    .brand-story-image-stald {
+        width: 384px;
+        height: 430px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // Nederste del med billeder og tekst
+    .brand-story-bottom {
+        display: grid;
+        grid-template-columns: 383px 1fr;
+        gap: $spacing-lg;
+    }
+
+    .brand-story-right {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: $spacing-md;
+    }
+
+    .brand-story-image-tall {
+        width: 383px;
+        height: 624px;
+        border-radius: 0 0 0 $radius-lg;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .brand-story-image-wide {
+        width: 100%;
+        height: 346px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .brand-story-bottom-text {
+        padding-top: $spacing-sm;
+    }
+
+    // Om Ida Section
+    .about-ida-section {
+        padding: $spacing-xl;
+        background-color: $color-background;
+    }
+
+    .about-ida-content {
+        max-width: $max-width-inner;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .about-ida-header {
+        font-family: $font-body;
+        font-weight: 600;
+        font-size: 24px;
+        color: $color-text-dark;
+        margin-bottom: $spacing-md;
+    }
+
+    .about-ida-text-wrap {
+        overflow: hidden; // Clear float
+    }
+
+    .about-ida-text {
+        font-family: $font-body;
+        font-size: $font-size-body;
+        color: $color-text-dark;
+        line-height: $line-height-body;
+        margin-bottom: $spacing-md;
+    }
+
+    .about-ida-cta {
+        clear: both;
+    }
+
+    .about-ida-image {
+        float: right;
+        width: fit-content;
+        height: auto;
+        margin-left: $spacing-xl;
+        margin-bottom: $spacing-md;
+        overflow: hidden;
+        border-radius: $radius-lg 0 0 0;
+
+        img {
+            width: 188px;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    // Mission/Vision boks
+    .mission-vision-box {
+        background-color: $color-tan;
+        padding: $spacing-xl;
+        margin: $spacing-xl 0;
+
+        .mission-title,
+        .vision-title {
+            font-family: $font-heading;
+            font-size: $font-size-h4;
+            color: $color-text-dark;
+            line-height: $line-height-heading;
+            margin-bottom: $spacing-sm;
+        }
+
+        .mission-text,
+        .vision-text {
+            font-family: $font-body;
+            font-size: $font-size-body;
+            color: $color-text-dark;
+            line-height: $line-height-body;
+            margin-bottom: $spacing-md;
+        }
+    }
+
+    // Om Düval & Dineo sektion
+    .collections-story-section {
+        padding: $spacing-xxl $spacing-section;
+        background-color: $color-background;
+    }
+
+    .collections-story-content {
+        max-width: $max-width-inner;
+        margin: 0 auto;
+    }
+
+    .collections-story-header {
+        margin-bottom: $spacing-xl;
+
+        .collections-story-title {
+            font-family: $font-heading;
+            font-size: $font-size-h2;
+            color: $color-text-dark;
+            line-height: $line-height-heading;
+            margin-bottom: $spacing-xs;
+        }
+
+        .collections-story-subtitle {
+            font-family: $font-body;
+            font-size: $font-size-body;
+            color: $color-text-dark;
+            text-transform: uppercase;
+        }
+    }
+
+    .collection-story-block {
+        display: grid;
+        grid-template-columns: 384px 1fr;
+        gap: $spacing-xl;
+        margin-bottom: $spacing-xxl;
+        align-items: start;
+
+        .collection-story-image {
+            border-radius: 0 $radius-lg 0 0;
+        }
+
+        &.reverse {
+            grid-template-columns: 1fr 336px;
+            align-items: start;
+
+            .collection-story-text {
+                order: 1;
+            }
+
+            .collection-story-image {
+                order: 2;
+                border-radius: $radius-lg 0 0 0;
+            }
+        }
+    }
+
+    .collection-story-image {
+        overflow: hidden;
+        height: 500px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .dineo-image {
+        border-radius: $radius-lg 0 0 0;
+        height: 371px;
+    }
+
+    .collection-story-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: $spacing-md;
+
+        h3 {
+            font-family: $font-heading;
+            font-size: $font-size-h4;
+            color: $color-text-dark;
+            line-height: $line-height-heading;
+            margin-bottom: $spacing-md;
+        }
+
+        p {
+            font-family: $font-body;
+            font-size: $font-size-body;
+            color: $color-text-dark;
+            line-height: $line-height-body;
+            margin-bottom: $spacing-md;
+        }
+    }
+
+    // Kontakt sektion
+    .contact-section {
+        padding: $spacing-xxl $spacing-section;
+        background-color: $color-tan;
+    }
+
+    .contact-content {
+        max-width: $max-width-inner;
+        margin: 0 auto;
+    }
+
+    .contact-title {
+        font-family: $font-heading;
+        font-size: $font-size-h2;
+        color: $color-text-dark;
+        line-height: $line-height-heading;
+        margin-bottom: $spacing-xl;
+    }
+
+    .contact-boxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $spacing-md;
+    }
+
+    .contact-box {
+        background-color: $color-primary;
+        padding: $spacing-xl;
+        border-radius: 0 $radius-lg 0 0;
+        color: $color-text-light;
+
+        &.contact-box-right {
+            border-radius: $radius-lg 0 0 0;
+
+            p {
+                font-weight: 400;
+            }
+        }
+
+        h3 {
+            font-family: $font-heading;
+            font-size: $font-size-h2;
+            line-height: $line-height-heading;
+            margin-bottom: $spacing-md;
+        }
+
+        p {
+            font-family: $font-body;
+            font-weight: 600;
+            font-size: $font-size-h5;
+            line-height: $line-height-body;
+            margin-bottom: $spacing-sm;
+        }
+    }
+
+    // Butikker sektion
+    .stores-section {
+        padding: $spacing-xxl $spacing-section $spacing-xxl;
+        background-color: $color-background;
+    }
+
+    .stores-content {
+        max-width: $max-width-inner;
+        margin: 0 auto;
+    }
+
+    .stores-header {
+        margin-bottom: $spacing-lg;
+
+        h2 {
+            font-family: $font-heading;
+            font-size: $font-size-h2;
+            color: $color-text-dark;
+            line-height: $line-height-heading;
+            margin-bottom: $spacing-sm;
+        }
+
+        p {
+            font-family: $font-body;
+            font-size: $font-size-body;
+            color: $color-text-dark;
+            line-height: $line-height-body;
+        }
+    }
+
+    .stores-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $spacing-md;
+    }
+
+    .store-card {
+        position: relative;
+        height: 521px;
+        overflow: hidden;
+
+        &.store-maribo {
+            background-color: $color-accent-light;
+        }
+
+        &.store-nykobing {
+            background-color: $color-accent;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .store-info {
+            position: absolute;
+            bottom: $spacing-lg;
+            left: $spacing-md;
+            color: $color-text-light;
+
+            h3 {
+                font-family: $font-heading;
+                font-size: $font-size-h4;
+                line-height: $line-height-heading;
+                margin-bottom: $spacing-sm;
+            }
+
+            p {
+                font-family: $font-body;
+                font-size: $font-size-body-small;
+                line-height: $line-height-body;
+                max-width: 347px;
+            }
+        }
+    }
+
+    // =============================================
+    // RESPONSIVE - OM OS PAGE
+    // =============================================
+    @media (max-width: 1200px) {
+        .about-hero-grid {
+            grid-template-columns: 1fr 240px;
+            padding: 0 $spacing-xl $spacing-xl;
+        }
+
+        .about-hero-main-image {
+            height: 320px;
+        }
+
+        .about-hero-side-image {
+            width: 240px;
+            height: 500px;
+        }
+
+        .about-hero-right {
+            margin-top: 60px;
+        }
+
+        .hero-title-single {
+            white-space: normal;
+        }
+
+        .brand-story-section,
+        .collections-story-section,
+        .contact-section,
+        .stores-section {
+            padding: $spacing-xl $spacing-xl;
+        }
+
+        .brand-story-top {
+            grid-template-columns: 1fr 320px;
+        }
+
+        .brand-story-image-stald {
+            width: 320px;
+            height: 380px;
+        }
+
+        .brand-story-bottom {
+            grid-template-columns: 320px 1fr;
+        }
+
+        .brand-story-image-tall {
+            width: 320px;
+            height: 550px;
+        }
+
+        .collection-story-block {
+            grid-template-columns: 300px 1fr;
+            gap: $spacing-lg;
+
+            &.reverse {
+                grid-template-columns: 1fr 300px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .about-hero-grid {
+            grid-template-columns: 1fr 200px;
+            padding: 0 $spacing-lg $spacing-xl;
+        }
+
+        .about-hero-main-image {
+            height: 280px;
+            border-radius: 0 $radius-md 0 $radius-md;
+        }
+
+        .about-hero-side-image {
+            width: 200px;
+            height: 450px;
+            border-radius: $radius-md 0 0 0;
+        }
+
+        .about-hero-right {
+            margin-top: 40px;
+        }
+
+        .brand-story-top {
+            grid-template-columns: 1fr 280px;
+            gap: $spacing-md;
+        }
+
+        .brand-story-image-stald {
+            width: 280px;
+            height: 350px;
+        }
+
+        .brand-story-bottom {
+            grid-template-columns: 1fr;
+        }
+
+        .brand-story-image-tall {
+            width: 100%;
+            max-width: 383px;
+            height: 500px;
+        }
+
+        .about-ida-image {
+            width: 320px;
+            margin-left: $spacing-lg;
+        }
+
+        .collection-story-block {
+            grid-template-columns: 1fr;
+
+            &.reverse {
+                grid-template-columns: 1fr;
+
+                .collection-story-image {
+                    order: 1;
+                    max-width: 336px;
+                }
+
+                .collection-story-text {
+                    order: 2;
+                }
+            }
+        }
+
+        .contact-boxes,
+        .stores-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .store-card {
+            height: 400px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .about-hero-grid {
+            grid-template-columns: 1fr;
+            padding: 0 $spacing-md $spacing-lg;
+        }
+
+        .about-hero-main-image {
+            height: 250px;
+            border-radius: 0 $radius-md 0 $radius-md;
+        }
+
+        .about-hero-side-image {
+            width: 100%;
+            max-width: 300px;
+            height: 350px;
+        }
+
+        .about-hero-right {
+            margin-top: 0;
+        }
+
+        .brand-story-section,
+        .collections-story-section,
+        .contact-section,
+        .stores-section {
+            padding: $spacing-xl $spacing-md;
+        }
+
+        .about-ida-content {
+            padding: 0 $spacing-md;
+        }
+
+        .about-ida-image {
+            float: none;
+            width: 100%;
+            max-width: 384px;
+            margin-left: 0;
+            margin-bottom: $spacing-lg;
+        }
+
+        .brand-story-top {
+            grid-template-columns: 1fr;
+        }
+
+        .brand-story-image-stald {
+            width: 100%;
+            height: 300px;
+        }
+
+        .brand-story-image-tall {
+            width: 100%;
+            max-width: 100%;
+            height: 400px;
+        }
+
+        .store-card {
+            height: 350px;
+        }
+    }
+}
+

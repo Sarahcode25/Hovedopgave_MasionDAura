@@ -1,0 +1,61 @@
+// =============================================
+// SCSS VARIABLER
+// =============================================
+
+// Farver
+$color-primary: #2a0e0e;
+$color-secondary: #6a3030;
+$color-accent: #bfa1a1;
+$color-accent-light: #d2b0b0;
+$color-accent-lighter: #e7cccc;
+$color-background: #f7f5f1;
+$color-tan: #cabcac;
+$color-text-light: #f7f5f1;
+$color-text-dark: #2a0e0e;
+$color-black: #000;
+
+// Typografi
+$font-heading: 'Yeseva One', serif;
+$font-body: 'Barlow', sans-serif;
+$font-script: 'Bellarina', cursive;
+
+// Font størrelser
+$font-size-h1: clamp(40px, 5vw, 61px);
+$font-size-h2: clamp(36px, 4vw, 49px);
+$font-size-h3: clamp(28px, 3vw, 39px);
+$font-size-h4: clamp(24px, 2.5vw, 31px);
+$font-size-h5: 25px;
+$font-size-body: 20px;
+$font-size-body-small: 16px;
+$font-size-nav: 20px;
+
+// Linjehøjder
+$line-height-heading: 1.05;
+$line-height-body: 1.15;
+$line-height-relaxed: 1.5;
+
+// Spacing
+$spacing-xs: 8px;
+$spacing-sm: 16px;
+$spacing-md: 20px;
+$spacing-lg: 40px;
+$spacing-xl: 60px;
+$spacing-xxl: 80px;
+$spacing-section: 100px;
+
+// Layout
+$max-width-content: 1440px;
+$max-width-inner: 1200px;
+$max-width-narrow: 960px;
+
+// Border radius
+$radius-sm: 20px;
+$radius-md: 64px;
+$radius-lg: 120px;
+
+// Shadows
+$shadow-card: 0 20px 40px rgba(0, 0, 0, 0.3);
+
+// Transitions
+$transition-fast: 0.3s ease;
+

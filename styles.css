@@ -1,785 +1,2711 @@
+.page-om-os .hero-tagline {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #f7f5f1;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.page-om-os .hero-subtitle {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  color: #f7f5f1;
+  line-height: 1.15;
+  margin-top: 16px;
+  max-width: 690px;
+}
+.page-om-os .hero-title-single {
+  white-space: nowrap;
+}
+.page-om-os .about-hero-grid {
+  display: grid;
+  grid-template-columns: 690px 282px;
+  gap: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px 80px;
+  align-items: end;
+}
+.page-om-os .about-hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.page-om-os .about-hero-main-image {
+  margin-top: 40px;
+  width: 100%;
+  height: 380px;
+  border-radius: 0 120px 0 120px;
+  overflow: hidden;
+}
+.page-om-os .about-hero-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.page-om-os .about-hero-right {
+  display: flex;
+  align-items: flex-start;
+  align-self: start;
+  margin-top: 100px;
+}
+.page-om-os .about-hero-side-image {
+  width: 282px;
+  height: 583px;
+  border-radius: 120px 0 0 0;
+  overflow: hidden;
+}
+.page-om-os .about-hero-side-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.page-om-os .brand-story-section {
+  padding: 80px 100px;
+  background-color: #f7f5f1;
+}
+.page-om-os .brand-story-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.page-om-os .brand-story-top {
+  display: grid;
+  grid-template-columns: 1fr 384px;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 40px;
+}
+.page-om-os .brand-story-left {
+  display: flex;
+  flex-direction: column;
+}
+.page-om-os .brand-story-title {
+  font-family: "Yeseva One", serif;
+  font-size: clamp(36px, 4vw, 49px);
+  color: #2a0e0e;
+  line-height: 1.05;
+  margin-bottom: 40px;
+}
+.page-om-os .brand-story-subtitle {
+  font-family: "Yeseva One", serif;
+  font-size: 25px;
+  font-style: italic;
+  color: #2a0e0e;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.page-om-os .brand-story-text {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  color: #2a0e0e;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+.page-om-os .brand-story-image-stald {
+  width: 384px;
+  height: 430px;
+  overflow: hidden;
+}
+.page-om-os .brand-story-image-stald img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.page-om-os .brand-story-bottom {
+  display: grid;
+  grid-template-columns: 383px 1fr;
+  gap: 40px;
+}
+.page-om-os .brand-story-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+.page-om-os .brand-story-image-tall {
+  width: 383px;
+  height: 624px;
+  border-radius: 0 0 0 120px;
+  overflow: hidden;
+}
+.page-om-os .brand-story-image-tall img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.page-om-os .brand-story-image-wide {
+  width: 100%;
+  height: 346px;
+  overflow: hidden;
+}
+.page-om-os .brand-story-image-wide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.page-om-os .brand-story-bottom-text {
+  padding-top: 16px;
+}
+.page-om-os .about-ida-section {
+  padding: 60px;
+  background-color: #f7f5f1;
+}
+.page-om-os .about-ida-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+.page-om-os .about-ida-header {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #2a0e0e;
+  margin-bottom: 20px;
+}
+.page-om-os .about-ida-text-wrap {
+  overflow: hidden;
+}
+.page-om-os .about-ida-text {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  color: #2a0e0e;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+.page-om-os .about-ida-cta {
+  clear: both;
+}
+.page-om-os .about-ida-image {
+  float: right;
+  width: fit-content;
+  height: auto;
+  margin-left: 60px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 120px 0 0 0;
+}
+.page-om-os .about-ida-image img {
+  width: 188px;
+  height: auto;
+  object-fit: cover;
+}
+.page-om-os .mission-vision-box {
+  background-color: #cabcac;
+  padding: 60px;
+  margin: 60px 0;
+}
+.page-om-os .mission-vision-box .mission-title,
+.page-om-os .mission-vision-box .vision-title {
+  font-family: "Yeseva One", serif;
+  font-size: clamp(24px, 2.5vw, 31px);
+  color: #2a0e0e;
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+.page-om-os .mission-vision-box .mission-text,
+.page-om-os .mission-vision-box .vision-text {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  color: #2a0e0e;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+.page-om-os .collections-story-section {
+  padding: 80px 100px;
+  background-color: #f7f5f1;
+}
+.page-om-os .collections-story-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.page-om-os .collections-story-header {
+  margin-bottom: 60px;
+}
+.page-om-os .collections-story-header .collections-story-title {
+  font-family: "Yeseva One", serif;
+  font-size: clamp(36px, 4vw, 49px);
+  color: #2a0e0e;
+  line-height: 1.05;
+  margin-bottom: 8px;
+}
+.page-om-os .collections-story-header .collections-story-subtitle {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  color: #2a0e0e;
+  text-transform: uppercase;
+}
+.page-om-os .collection-story-block {
+  display: grid;
+  grid-template-columns: 384px 1fr;
+  gap: 60px;
+  margin-bottom: 80px;
+  align-items: start;
+}
+.page-om-os .collection-story-block .collection-story-image {
+  border-radius: 0 120px 0 0;
+}
+.page-om-os .collection-story-block.reverse {
+  grid-template-columns: 1fr 336px;
+  align-items: start;
+}
+.page-om-os .collection-story-block.reverse .collection-story-text {
+  order: 1;
+}
+.page-om-os .collection-story-block.reverse .collection-story-image {
+  order: 2;
+  border-radius: 120px 0 0 0;
+}
+.page-om-os .collection-story-image {
+  overflow: hidden;
+  height: 500px;
+}
+.page-om-os .collection-story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.page-om-os .dineo-image {
+  border-radius: 120px 0 0 0;
+  height: 371px;
+}
+.page-om-os .collection-story-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+.page-om-os .collection-story-text h3 {
+  font-family: "Yeseva One", serif;
+  font-size: clamp(24px, 2.5vw, 31px);
+  color: #2a0e0e;
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+.page-om-os .collection-story-text p {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  color: #2a0e0e;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+.page-om-os .contact-section {
+  padding: 80px 100px;
+  background-color: #cabcac;
+}
+.page-om-os .contact-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.page-om-os .contact-title {
+  font-family: "Yeseva One", serif;
+  font-size: clamp(36px, 4vw, 49px);
+  color: #2a0e0e;
+  line-height: 1.05;
+  margin-bottom: 60px;
+}
+.page-om-os .contact-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.page-om-os .contact-box {
+  background-color: #2a0e0e;
+  padding: 60px;
+  border-radius: 0 120px 0 0;
+  color: #f7f5f1;
+}
+.page-om-os .contact-box.contact-box-right {
+  border-radius: 120px 0 0 0;
+}
+.page-om-os .contact-box.contact-box-right p {
+  font-weight: 400;
+}
+.page-om-os .contact-box h3 {
+  font-family: "Yeseva One", serif;
+  font-size: clamp(36px, 4vw, 49px);
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+.page-om-os .contact-box p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.page-om-os .stores-section {
+  padding: 80px 100px 80px;
+  background-color: #f7f5f1;
+}
+.page-om-os .stores-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.page-om-os .stores-header {
+  margin-bottom: 40px;
+}
+.page-om-os .stores-header h2 {
+  font-family: "Yeseva One", serif;
+  font-size: clamp(36px, 4vw, 49px);
+  color: #2a0e0e;
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+.page-om-os .stores-header p {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  color: #2a0e0e;
+  line-height: 1.15;
+}
+.page-om-os .stores-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.page-om-os .store-card {
+  position: relative;
+  height: 521px;
+  overflow: hidden;
+}
+.page-om-os .store-card.store-maribo {
+  background-color: #d2b0b0;
+}
+.page-om-os .store-card.store-nykobing {
+  background-color: #bfa1a1;
+}
+.page-om-os .store-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.page-om-os .store-card .store-info {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  color: #f7f5f1;
+}
+.page-om-os .store-card .store-info h3 {
+  font-family: "Yeseva One", serif;
+  font-size: clamp(24px, 2.5vw, 31px);
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+.page-om-os .store-card .store-info p {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 1.15;
+  max-width: 347px;
+}
+@media (max-width: 1200px) {
+  .page-om-os .about-hero-grid {
+    grid-template-columns: 1fr 240px;
+    padding: 0 60px 60px;
+  }
+  .page-om-os .about-hero-main-image {
+    height: 320px;
+  }
+  .page-om-os .about-hero-side-image {
+    width: 240px;
+    height: 500px;
+  }
+  .page-om-os .about-hero-right {
+    margin-top: 60px;
+  }
+  .page-om-os .hero-title-single {
+    white-space: normal;
+  }
+  .page-om-os .brand-story-section,
+  .page-om-os .collections-story-section,
+  .page-om-os .contact-section,
+  .page-om-os .stores-section {
+    padding: 60px 60px;
+  }
+  .page-om-os .brand-story-top {
+    grid-template-columns: 1fr 320px;
+  }
+  .page-om-os .brand-story-image-stald {
+    width: 320px;
+    height: 380px;
+  }
+  .page-om-os .brand-story-bottom {
+    grid-template-columns: 320px 1fr;
+  }
+  .page-om-os .brand-story-image-tall {
+    width: 320px;
+    height: 550px;
+  }
+  .page-om-os .collection-story-block {
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+  }
+  .page-om-os .collection-story-block.reverse {
+    grid-template-columns: 1fr 300px;
+  }
+}
+@media (max-width: 1024px) {
+  .page-om-os .about-hero-grid {
+    grid-template-columns: 1fr 200px;
+    padding: 0 40px 60px;
+  }
+  .page-om-os .about-hero-main-image {
+    height: 280px;
+    border-radius: 0 64px 0 64px;
+  }
+  .page-om-os .about-hero-side-image {
+    width: 200px;
+    height: 450px;
+    border-radius: 64px 0 0 0;
+  }
+  .page-om-os .about-hero-right {
+    margin-top: 40px;
+  }
+  .page-om-os .brand-story-top {
+    grid-template-columns: 1fr 280px;
+    gap: 20px;
+  }
+  .page-om-os .brand-story-image-stald {
+    width: 280px;
+    height: 350px;
+  }
+  .page-om-os .brand-story-bottom {
+    grid-template-columns: 1fr;
+  }
+  .page-om-os .brand-story-image-tall {
+    width: 100%;
+    max-width: 383px;
+    height: 500px;
+  }
+  .page-om-os .about-ida-image {
+    width: 320px;
+    margin-left: 40px;
+  }
+  .page-om-os .collection-story-block {
+    grid-template-columns: 1fr;
+  }
+  .page-om-os .collection-story-block.reverse {
+    grid-template-columns: 1fr;
+  }
+  .page-om-os .collection-story-block.reverse .collection-story-image {
+    order: 1;
+    max-width: 336px;
+  }
+  .page-om-os .collection-story-block.reverse .collection-story-text {
+    order: 2;
+  }
+  .page-om-os .contact-boxes,
+  .page-om-os .stores-grid {
+    grid-template-columns: 1fr;
+  }
+  .page-om-os .store-card {
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .page-om-os .about-hero-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px 40px;
+  }
+  .page-om-os .about-hero-main-image {
+    height: 250px;
+    border-radius: 0 64px 0 64px;
+  }
+  .page-om-os .about-hero-side-image {
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+  }
+  .page-om-os .about-hero-right {
+    margin-top: 0;
+  }
+  .page-om-os .brand-story-section,
+  .page-om-os .collections-story-section,
+  .page-om-os .contact-section,
+  .page-om-os .stores-section {
+    padding: 60px 20px;
+  }
+  .page-om-os .about-ida-content {
+    padding: 0 20px;
+  }
+  .page-om-os .about-ida-image {
+    float: none;
+    width: 100%;
+    max-width: 384px;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+  .page-om-os .brand-story-top {
+    grid-template-columns: 1fr;
+  }
+  .page-om-os .brand-story-image-stald {
+    width: 100%;
+    height: 300px;
+  }
+  .page-om-os .brand-story-image-tall {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+  }
+  .page-om-os .store-card {
+    height: 350px;
+  }
+}
+
+.katalog-page .katalog-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 0 60px;
+  width: 100%;
+  background-color: #eee2e2;
+  height: 125px;
+}
+.katalog-page .katalog-nav-link {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #2a0e0e;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+.katalog-page .katalog-nav-link:hover {
+  opacity: 0.7;
+}
+.katalog-page .katalog-logo {
+  width: 180px;
+  flex-shrink: 0;
+  text-align: center;
+}
+.katalog-page .katalog-logo-text {
+  font-family: "Yeseva One", serif;
+  font-size: 40px;
+  color: #2a0e0e;
+}
+.katalog-page .katalog-hero {
+  background-color: #601e1e;
+  padding: 80px 100px;
+  min-height: 505px;
+}
+.katalog-page .katalog-hero-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.katalog-page .katalog-hero-content {
+  max-width: 486px;
+  padding-top: 40px;
+}
+.katalog-page .katalog-hero-title {
+  font-family: "Yeseva One", serif;
+  font-size: 60px;
+  line-height: 1.05;
+  color: #f7f5f1;
+  margin-bottom: 20px;
+}
+.katalog-page .katalog-hero-text {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 25px;
+  line-height: 1.5;
+  color: #f7f5f1;
+}
+.katalog-page .katalog-filters {
+  background-color: #f7f5f1;
+  padding: 40px 0;
+  overflow: hidden;
+  position: relative;
+}
+.katalog-page .katalog-filters::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 120px;
+  background: linear-gradient(to right, transparent, #f7f5f1);
+  pointer-events: none;
+  z-index: 1;
+}
+.katalog-page .katalog-filters-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  padding: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.katalog-page .katalog-filters-inner::-webkit-scrollbar {
+  display: none;
+}
+.katalog-page .filter-btn {
+  background-color: #a45d4e;
+  color: #f7f5f1;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 0 32px 32px 0;
+  border-bottom-left-radius: 32px;
+  border-top-right-radius: 32px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(42, 14, 14, 0.2);
+  text-shadow: 0 1px 8px rgba(42, 14, 14, 0.25);
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  min-width: 140px;
+  flex-shrink: 0;
+  height: 58px;
+}
+.katalog-page .filter-btn:hover {
+  background-color: #81493e;
+}
+.katalog-page .filter-btn.filter-btn-active {
+  background-color: #6a3030;
+}
+.katalog-page .filter-btn.filter-btn-secondary {
+  background-color: #a45d4e;
+}
+.katalog-page .filter-btn.filter-btn-small {
+  min-width: 140px;
+  padding: 16px 32px;
+  height: 55px;
+  border-radius: 0 24px 24px 0;
+  border-bottom-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.katalog-page .katalog-collection {
+  padding: 60px 0;
+  background-color: #f7f5f1;
+}
+.katalog-page .katalog-collection-inner {
+  margin: 0 auto;
+}
+.katalog-page .collection-header {
+  margin-bottom: 40px;
+}
+.katalog-page .collection-main-title {
+  font-family: "Yeseva One", serif;
+  font-size: clamp(36px, 4vw, 49px);
+  line-height: 1.05;
+  color: #2a0e0e;
+  margin-bottom: 20px;
+}
+.katalog-page .collection-intro {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #2a0e0e;
+  margin-bottom: 16px;
+}
+.katalog-page .duval-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto auto auto;
+  gap: 24px;
+}
+.katalog-page .duval-item {
+  position: relative;
+  overflow: hidden;
+  background-color: #bfa1a1;
+  aspect-ratio: 1/1;
+}
+.katalog-page .duval-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.katalog-page .duval-product-1 {
+  grid-column: 1;
+  grid-row: 1;
+  border-radius: 0;
+}
+.katalog-page .duval-product-2 {
+  grid-column: 2;
+  grid-row: 1;
+  border-radius: 0 120px 0 0;
+}
+.katalog-page .duval-product-3 {
+  grid-column: 3;
+  grid-row: 1;
+  border-radius: 120px 0 0 0;
+}
+.katalog-page .duval-product-4 {
+  grid-column: 1;
+  grid-row: 2;
+  border-radius: 0;
+  height: 384px;
+}
+.katalog-page .duval-feature-section {
+  grid-column: 2/4;
+  grid-row: 2/4;
+  background-image: url("img/katalog-rectangle1.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 120px 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.katalog-page .duval-feature-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.katalog-page .duval-feature-text {
+  max-width: 304px;
+}
+.katalog-page .duval-feature-text h3 {
+  font-family: "Yeseva One", serif;
+  font-size: 25px;
+  line-height: 1.05;
+  color: #f7f5f1;
+  margin-bottom: 8px;
+}
+.katalog-page .duval-feature-text p {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f7f5f1;
+}
+.katalog-page .duval-feature-bottom {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+  align-items: stretch;
+}
+.katalog-page .duval-feature-bottom .duval-product-5 {
+  width: 320px;
+  flex-shrink: 0;
+  border: 12px solid #f7f5f1;
+  border-left: none;
+  border-bottom: none;
+  border-radius: 0;
+  box-sizing: border-box;
+  align-self: flex-end;
+  height: auto;
+  aspect-ratio: 1;
+}
+.katalog-page .duval-feature-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.katalog-page .duval-horse-muzzle {
+  width: 100%;
+  flex: 1;
+  object-fit: cover;
+  border-radius: 0;
+  min-height: 200px;
+}
+.katalog-page .duval-feature-right .duval-textbox-2 {
+  background-color: transparent;
+  padding: 16px 0 0 0;
+  flex-shrink: 0;
+}
+.katalog-page .duval-feature-right .duval-textbox-2 h3 {
+  font-family: "Yeseva One", serif;
+  font-size: 25px;
+  line-height: 1.05;
+  color: #2a0e0e;
+  margin-bottom: 8px;
+}
+.katalog-page .duval-feature-right .duval-textbox-2 p {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2a0e0e;
+}
+.katalog-page .duval-textbox-1 {
+  grid-column: 1;
+  grid-row: 3;
+  padding: 20px 0;
+  background-color: transparent;
+  height: auto;
+  align-self: start;
+}
+.katalog-page .duval-textbox-1 h3 {
+  font-family: "Yeseva One", serif;
+  font-size: 25px;
+  line-height: 1.05;
+  color: #2a0e0e;
+  margin-bottom: 8px;
+}
+.katalog-page .duval-textbox-1 p {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2a0e0e;
+}
+.katalog-page .duval-atmosphere-image {
+  grid-column: 1;
+  grid-row: 4/6;
+  height: auto;
+}
+.katalog-page .duval-atmosphere-image img {
+  height: 100%;
+}
+.katalog-page .duval-product-6 {
+  grid-column: 2;
+  grid-row: 5;
+  border-radius: 0;
+  align-self: end;
+}
+.katalog-page .duval-product-7 {
+  grid-column: 3;
+  grid-row: 5;
+  border-radius: 0 0 0 120px;
+  align-self: end;
+}
+.katalog-page .product-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 30px;
+  background: linear-gradient(to top, rgba(42, 14, 14, 0.85) 0%, rgba(42, 14, 14, 0.7) 30%, rgba(42, 14, 14, 0.4) 60%, rgba(42, 14, 14, 0.1) 85%, rgba(42, 14, 14, 0) 100%);
+  color: #f7f5f1;
+}
+.katalog-page .product-name {
+  font-family: "Yeseva One", serif;
+  font-size: 31px;
+  line-height: 1.05;
+  color: #f7f5f1;
+  text-align: center;
+}
+.katalog-page .product-subtitle {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.05;
+  color: #f7f5f1;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.katalog-page .product-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.katalog-page .product-price-label {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #f7f5f1;
+}
+.katalog-page .product-price {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #f7f5f1;
+}
+.katalog-page .atmosphere-text-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 304px;
+  color: #f7f5f1;
+}
+.katalog-page .atmosphere-text-overlay h3 {
+  font-family: "Yeseva One", serif;
+  font-size: 25px;
+  line-height: 1.05;
+  margin-bottom: 8px;
+}
+.katalog-page .atmosphere-text-overlay p {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.katalog-page .katalog-udvalgt {
+  padding: 60px 100px;
+  background-color: #f7f5f1;
+}
+.katalog-page .katalog-udvalgt-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.katalog-page .udvalgt-header {
+  margin-bottom: 40px;
+}
+.katalog-page .udvalgt-title {
+  font-family: "Yeseva One", serif;
+  font-size: clamp(36px, 4vw, 49px);
+  line-height: 1.05;
+  color: #2a0e0e;
+  margin-bottom: 16px;
+}
+.katalog-page .udvalgt-intro {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #2a0e0e;
+  max-width: 588px;
+}
+.katalog-page .udvalgt-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 282px);
+  gap: 24px;
+  justify-content: start;
+}
+.katalog-page .udvalgt-item {
+  position: relative;
+  overflow: hidden;
+  background-color: #bfa1a1;
+  height: 282px;
+}
+.katalog-page .udvalgt-item:nth-child(3), .katalog-page .udvalgt-item:nth-child(4) {
+  height: 487px;
+}
+.katalog-page .udvalgt-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.katalog-page .udvalgt-item:nth-child(4) {
+  border-radius: 120px 0 0 0;
+}
+.katalog-page .udvalgt-product-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 30px;
+  background: linear-gradient(to top, rgba(42, 14, 14, 0.85) 0%, rgba(42, 14, 14, 0.776) 25.88%, rgba(42, 14, 14, 0.7) 52.18%, rgba(42, 14, 14, 0.475) 88.8%, rgba(42, 14, 14, 0.2) 123.55%);
+  color: #f7f5f1;
+}
+.katalog-page .udvalgt-product-name {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 4px;
+}
+.katalog-page .udvalgt-product-price {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+}
+.katalog-page .udvalgt-disclaimer {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #2a0e0e;
+  text-align: right;
+  margin-top: 16px;
+}
+.katalog-page .dinero-grid {
+  display: grid;
+  grid-template-columns: 384px 384px 384px;
+  grid-template-rows: 384px 384px;
+  gap: 24px;
+  justify-content: center;
+}
+.katalog-page .dinero-item {
+  position: relative;
+  overflow: hidden;
+  background-color: #bfa1a1;
+}
+.katalog-page .dinero-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.katalog-page .dinero-item-1 {
+  border-radius: 120px 0 0 0;
+}
+.katalog-page .dinero-item-2 {
+  position: relative;
+}
+.katalog-page .dinero-item-3 {
+  grid-row: 1/3;
+  grid-column: 3;
+  height: 792px;
+  border-radius: 120px 0 0 0;
+}
+.katalog-page .dinero-item-4 {
+  grid-column: 1/3;
+  width: 792px;
+}
+.katalog-page .dinero-coming-soon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.katalog-page .dinero-coming-soon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(9px);
+}
+.katalog-page .coming-soon-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #2a0e0e;
+}
+.katalog-page .coming-soon-overlay .coming-soon-icon {
+  width: 114px;
+  height: 113px;
+  margin-bottom: 16px;
+  filter: none;
+}
+.katalog-page .coming-soon-overlay h3 {
+  font-family: "Yeseva One", serif;
+  font-size: clamp(28px, 3vw, 39px);
+  line-height: 1.05;
+}
+.katalog-page .dinero-text-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 304px;
+  color: #f7f5f1;
+}
+.katalog-page .dinero-text-overlay h3 {
+  font-family: "Yeseva One", serif;
+  font-size: 25px;
+  line-height: 1.05;
+  margin-bottom: 8px;
+}
+.katalog-page .dinero-text-overlay p {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.katalog-page .dinero-text-bottom {
+  bottom: 80px;
+}
+.katalog-page .katalog-footer {
+  padding: 60px 100px;
+  background-color: #f7f5f1;
+  display: grid;
+  grid-template-columns: 270px 190px 1fr auto;
+  gap: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.katalog-page .footer-column-title {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.katalog-page .footer-info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.katalog-page .footer-info-item .footer-info-title {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+.katalog-page .footer-info-item .footer-info-text {
+  font-family: "Barlow", sans-serif;
+  font-size: 13px;
+  color: #000;
+}
+.katalog-page .footer-link-list {
+  list-style: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+.katalog-page .footer-link-list li {
+  margin-bottom: 8px;
+}
+.katalog-page .footer-right {
+  display: flex;
+  flex-direction: column;
+}
+.katalog-page .footer-social-links {
+  display: flex;
+  gap: 8px;
+  font-family: "Barlow", sans-serif;
+  font-size: 13px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.katalog-page .footer-divider {
+  height: 1px;
+  background-color: #000;
+  margin-bottom: 20px;
+}
+.katalog-page .footer-description {
+  font-family: "Barlow", sans-serif;
+  font-size: 13px;
+  color: #000;
+  line-height: 1.15;
+}
+.katalog-page .footer-logo-large {
+  width: 194px;
+}
+.katalog-page .footer-logo-large img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1200px) {
+  .katalog-page .duval-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .katalog-page .duval-item,
+  .katalog-page .duval-product-1,
+  .katalog-page .duval-product-2,
+  .katalog-page .duval-product-3,
+  .katalog-page .duval-product-4,
+  .katalog-page .duval-product-5,
+  .katalog-page .duval-product-6,
+  .katalog-page .duval-product-7 {
+    width: 100%;
+    height: 350px;
+  }
+  .katalog-page .duval-feature-image {
+    grid-column: 1/3;
+    width: 100%;
+    height: 450px;
+  }
+  .katalog-page .duval-atmosphere-image {
+    height: 450px;
+  }
+  .katalog-page .dinero-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .katalog-page .dinero-item-3 {
+    grid-row: auto;
+    grid-column: auto;
+    height: 450px;
+  }
+  .katalog-page .dinero-item-4 {
+    grid-column: 1/3;
+    width: 100%;
+  }
+  .katalog-page .udvalgt-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .katalog-page .katalog-footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .katalog-page .katalog-nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+  .katalog-page .katalog-hero {
+    padding: 40px 20px;
+    min-height: auto;
+  }
+  .katalog-page .katalog-hero-inner {
+    justify-content: center;
+  }
+  .katalog-page .katalog-hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .katalog-page .katalog-hero-title {
+    font-size: 40px;
+  }
+  .katalog-page .katalog-filters {
+    padding: 20px;
+  }
+  .katalog-page .katalog-filters-inner {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 16px;
+  }
+  .katalog-page .katalog-collection {
+    padding: 40px 20px;
+  }
+  .katalog-page .duval-grid,
+  .katalog-page .dinero-grid {
+    grid-template-columns: 1fr;
+  }
+  .katalog-page .duval-feature-image,
+  .katalog-page .dinero-item-4 {
+    grid-column: 1;
+  }
+  .katalog-page .udvalgt-grid {
+    grid-template-columns: 1fr;
+  }
+  .katalog-page .udvalgt-item,
+  .katalog-page .udvalgt-item:nth-child(3),
+  .katalog-page .udvalgt-item:nth-child(4) {
+    height: 300px;
+  }
+  .katalog-page .katalog-footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .katalog-page .footer-logo-large {
+    margin: 0 auto;
+  }
+  .katalog-page .katalog-udvalgt {
+    padding: 40px 20px;
+  }
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Barlow', sans-serif;
-    background-color: #f7f5f1;
-    color: #2a0e0e;
-    overflow-x: hidden;
+  font-family: "Barlow", sans-serif;
+  background-color: #f7f5f1;
+  color: #2a0e0e;
+  overflow-x: hidden;
 }
 
 main {
-    width: 100%;
+  width: 100%;
 }
 
-/* =============================================
-   HEADER/HERO SECTION
-   ============================================= */
 .header-section {
-    background: linear-gradient(to bottom, #2a0e0e 0%, #3d1a1a 50%, #6b4a4a 80%, #918989 100%);
-    min-height: 929px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  background: linear-gradient(to bottom, #2a0e0e 0%, #3d1a1a 50%, #6b4a4a 80%, #918989 100%);
+  min-height: 929px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Navigation */
 .header-nav {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 60px;
-    padding: 40px 60px 20px;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 40px 60px 20px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .nav-link {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color: #f7f5f1;
-    text-decoration: none;
-    white-space: nowrap;
-    line-height: 1.15;
-    transition: opacity 0.3s;
-    padding-top: 40px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #f7f5f1;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 1.15;
+  transition: opacity 0.3s ease;
+  padding-top: 40px;
 }
-
 .nav-link:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .header-logo {
-    width: 260px;
-    flex-shrink: 0;
+  width: 260px;
+  flex-shrink: 0;
 }
-
 .header-logo img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Hero Content */
 .hero-content {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 40px;
-    flex: 1;
-    padding: 0px 100px 100px 100px;
-    align-items: center;
-    max-width: 1440px;
-    margin: 0 auto;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  flex: 1;
+  padding: 0 100px 100px 100px;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .hero-text {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .hero-title {
-    font-family: 'Yeseva One', serif;
-    font-size: clamp(40px, 5vw, 61px);
-    line-height: 1.05;
-    color: #f7f5f1;
-    max-width: 400px;
+  font-family: "Yeseva One", serif;
+  font-size: clamp(40px, 5vw, 61px);
+  line-height: 1.05;
+  color: #f7f5f1;
+  max-width: 400px;
 }
 
 .hero-button {
-    background-color: rgba(106, 48, 48, 0.8);
-    padding: 14px 28px;
-    border-radius: 0 30px 0 0;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-decoration: none;
-    border: 1px solid rgba(247, 245, 241, 0.3);
+  background-color: rgba(106, 48, 48, 0.8);
+  padding: 14px 28px;
+  border-radius: 0 30px 0 0;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  border: 1px solid rgba(247, 245, 241, 0.3);
 }
-
 .hero-button:hover {
-    background-color: rgba(138, 64, 64, 0.9);
+  background-color: rgba(138, 64, 64, 0.9);
 }
 
 .hero-button-text {
-    font-family: 'Barlow', sans-serif;
-    font-size: 20px;
-    color: #f7f5f1;
-    text-align: center;
-    line-height: 1.15;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  color: #f7f5f1;
+  text-align: center;
+  line-height: 1.15;
 }
 
-/* Hero Images */
 .hero-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    align-items: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  align-items: start;
 }
 
 .hero-image-1 {
-    border-radius: 0;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    z-index: 2;
-    margin-top: 80px;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  margin-top: 80px;
 }
-
 .hero-image-1 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .hero-image-2 {
-    border-radius: 0 30px 0 0;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    margin-left: -20px;
+  border-radius: 0 30px 0 0;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  margin-left: -20px;
 }
-
 .hero-image-2 img {
-    width: 100%;
-    height: 407px;
-    display: block;
-    object-fit: cover;
-    border-radius: 0px 70px 0px 0px;
+  width: 100%;
+  height: 407px;
+  display: block;
+  object-fit: cover;
+  border-radius: 0 70px 0 0;
 }
 
-/* =============================================
-   ABOUT CREATOR SECTION
-   ============================================= */
 .about-section {
-    padding: 80px 100px 80px;
-    background-color: #f7f5f1;
-    max-width: 1440px;
-    margin: 0 auto;
+  padding: 80px 100px 80px;
+  background-color: #f7f5f1;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .about-title {
-    font-family: 'Yeseva One', serif;
-    font-size: clamp(36px, 4vw, 49px);
-    line-height: 1.05;
-    color: #2a0e0e;
-    text-align: center;
-    margin-bottom: 40px;
+  font-family: "Yeseva One", serif;
+  font-size: clamp(36px, 4vw, 49px);
+  line-height: 1.05;
+  color: #2a0e0e;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .about-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 40px;
-    width: 960px;
-    height: auto;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .about-left {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 960px;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 960px;
+  text-align: left;
 }
 
 .about-quote {
-    font-family: 'Bellarina', cursive;
-    font-style: normal;
-    font-size: 22px;
-    line-height: 1;
-    color: #2a0e0e;
-    margin-bottom: 15px;
+  font-family: "Bellarina", cursive;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1;
+  color: #2a0e0e;
+  margin-bottom: 15px;
 }
 
 .about-images {
-    display: flex;
-    flex-direction: row;
-    gap: 0;
-    align-items: start;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: start;
+  width: 100%;
 }
 
 .about-image-1 {
-    overflow: hidden;
-    z-index: 2;
-    margin-top: 170px;
-    margin-right: -80px;
+  overflow: hidden;
+  z-index: 2;
+  margin-top: 170px;
+  margin-right: -80px;
 }
-
 .about-image-1 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    max-height: 513px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 513px;
 }
 
 .about-image-2 {
-    overflow: hidden;
-    border-radius: 0 120px 0 0;
-    z-index: 1;
+  overflow: hidden;
+  border-radius: 0 120px 0 0;
+  z-index: 1;
 }
-
 .about-image-2 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    max-height: 609px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 609px;
 }
 
 .about-text {
-    font-family: 'Barlow', sans-serif;
-    font-size: 20px;
-    line-height: 1.15;
-    color: #2a0e0e;
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #2a0e0e;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* =============================================
-   FEATURED PRODUCTS SECTION
-   ============================================= */
 .featured-section {
-    padding: 80px 100px;
-    background-color: #f7f5f1;
-    max-width: 1440px;
-    margin: 0 auto;
+  padding: 80px 100px;
+  background-color: #f7f5f1;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .featured-title {
-    font-family: 'Yeseva One', serif;
-    font-size: clamp(36px, 4vw, 49px);
-    line-height: 1.05;
-    color: #2a0e0e;
-    margin-bottom: 40px;
+  font-family: "Yeseva One", serif;
+  font-size: clamp(36px, 4vw, 49px);
+  line-height: 1.05;
+  color: #2a0e0e;
+  margin-bottom: 40px;
 }
 
 .featured-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
 }
 
 .featured-item {
-    overflow: hidden;
-    background-color: #d2b0b0;
+  overflow: hidden;
+  background-color: #d2b0b0;
 }
-
 .featured-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-/* Stort billede øverst venstre - afrundet nederst venstre */
 .featured-large {
-    grid-column: 1;
-    grid-row: 1;
-    border-radius: 0 0 0 64px;
-    min-height: 450px;
+  grid-column: 1;
+  grid-row: 1;
+  border-radius: 0 0 0 64px;
+  min-height: 450px;
 }
 
-/* Højt smalt billede midt - spænder over begge rækker */
 .featured-tall {
-    grid-column: 2;
-    grid-row: 1 / 3;
-    min-height: 771px;
+  grid-column: 2;
+  grid-row: 1/3;
+  min-height: 771px;
 }
 
-/* Lille billede øverst højre - afrundet nederst højre */
 .featured-small-top {
-    grid-column: 3;
-    grid-row: 1;
-    border-radius: 0 0 64px 0;
-    min-height: 292px;
+  grid-column: 3;
+  grid-row: 1;
+  border-radius: 0 0 64px 0;
+  min-height: 292px;
 }
 
-/* Lille billede nederst venstre - afrundet øverst venstre */
 .featured-small-bottom {
-    grid-column: 1;
-    grid-row: 2;
-    border-radius: 64px 0 0 0;
-    max-width: 282px;
-    min-height: 293px;
+  grid-column: 1;
+  grid-row: 2;
+  border-radius: 64px 0 0 0;
+  max-width: 282px;
+  min-height: 293px;
 }
 
-/* Tekst boks midt nederst */
 .featured-text {
-    grid-column: 1;
-    grid-row: 2;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    margin-left: 300px;
-    max-width: 282px;
+  grid-column: 1;
+  grid-row: 2;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 300px;
+  max-width: 282px;
 }
 
-/* Højt billede nederst højre - afrundet øverst højre */
 .featured-tall-bottom {
-    grid-column: 3;
-    grid-row: 2;
-    border-radius: 0 64px 0 0;
-    min-height: 452px;
+  grid-column: 3;
+  grid-row: 2;
+  border-radius: 0 64px 0 0;
+  min-height: 452px;
 }
 
 .craftsmanship-title {
-    font-family: 'Yeseva One', serif;
-    font-size: clamp(28px, 3vw, 39px);
-    line-height: 1.05;
-    color: #2a0e0e;
-    margin-bottom: 12px;
+  font-family: "Yeseva One", serif;
+  font-size: clamp(28px, 3vw, 39px);
+  line-height: 1.05;
+  color: #2a0e0e;
+  margin-bottom: 12px;
 }
 
 .craftsmanship-text {
-    font-family: 'Barlow', sans-serif;
-    font-size: 20px;
-    line-height: 1.15;
-    color: #2a0e0e;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #2a0e0e;
 }
 
-/* =============================================
-   COLLECTIONS SECTION
-   ============================================= */
 .collections-section {
-    padding: 80px 40px;
-    background-color: #cabcac;
-    width: 100%;
+  padding: 80px 40px;
+  background-color: #cabcac;
+  width: 100%;
 }
 
 .collections-inner {
-    max-width: 960px;
-    margin: 0 auto;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .collections-title {
-    font-family: 'Yeseva One', serif;
-    font-size: clamp(36px, 4vw, 49px);
-    line-height: 1.05;
-    color: #000;
-    text-align: center;
-    margin-bottom: 60px;
+  font-family: "Yeseva One", serif;
+  font-size: clamp(36px, 4vw, 49px);
+  line-height: 1.05;
+  color: #000;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .collections-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 
 .collection-block {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .collection-image-container {
-    width: 100%;
-    aspect-ratio: 4/3;
-    overflow: hidden;
-    border-radius: 20px;
-    background-color: #d2b0b0;
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #d2b0b0;
 }
 
 .collection-image-wrapper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-
 .collection-image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .collection-title {
-    font-family: 'Yeseva One', serif;
-    font-size: clamp(24px, 2.5vw, 31px);
-    line-height: 1.05;
-    color: #000;
+  font-family: "Yeseva One", serif;
+  font-size: clamp(24px, 2.5vw, 31px);
+  line-height: 1.05;
+  color: #000;
 }
 
 .collection-text {
-    font-family: 'Barlow', sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
-    color: #000;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000;
 }
 
-/* =============================================
-   INSTAGRAM SECTION
-   ============================================= */
 .instagram-section {
-    padding: 80px 40px;
-    background-color: #f7f5f1;
-    max-width: 1440px;
-    margin: 0 auto;
+  padding: 80px 40px;
+  background-color: #f7f5f1;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .instagram-title {
-    font-family: 'Yeseva One', serif;
-    font-size: clamp(36px, 4vw, 49px);
-    line-height: 1.05;
-    color: #000;
-    text-align: center;
-    margin-bottom: 60px;
+  font-family: "Yeseva One", serif;
+  font-size: clamp(36px, 4vw, 49px);
+  line-height: 1.05;
+  color: #000;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .instagram-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-bottom: 40px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .instagram-image {
-    overflow: hidden;
-    border-radius: 20px 0 0 0;
-    background-color: #d2b0b0;
-    aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 20px 0 0 0;
+  background-color: #d2b0b0;
+  aspect-ratio: 1/1;
 }
-
 .instagram-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .instagram-handle {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 600;
-    font-size: clamp(20px, 2vw, 25px);
-    line-height: 1.15;
-    color: #000;
-    text-align: center;
-    margin-top: 40px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: clamp(20px, 2vw, 25px);
+  line-height: 1.15;
+  color: #000;
+  text-align: center;
+  margin-top: 40px;
 }
 
-/* =============================================
-   FOOTER
-   ============================================= */
 .footer {
-    padding: 60px 40px;
-    background-color: #f7f5f1;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 40px;
-    max-width: 1440px;
-    margin: 0 auto;
+  padding: 60px 40px;
+  background-color: #f7f5f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .footer-contact {
-    flex: 1;
-    min-width: 250px;
+  flex: 1;
+  min-width: 250px;
 }
 
 .footer-contact-title {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.15;
-    color: #000;
-    margin-bottom: 24px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #000;
+  margin-bottom: 24px;
 }
 
 .footer-contact-info {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #000;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
 }
-
 .footer-contact-info p {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .footer-logo {
-    width: 180px;
-    flex-shrink: 0;
+  width: 180px;
+  flex-shrink: 0;
 }
-
 .footer-logo img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-/* =============================================
-   RESPONSIVE DESIGN
-   ============================================= */
 @media (max-width: 1200px) {
-    .about-section {
-        padding: 60px 60px;
-    }
-
-    .about-content {
-        width: 100%;
-    }
-
-    .about-left {
-        width: 100%;
-    }
-
-    .about-image-1 {
-        margin-top: 120px;
-        margin-right: -50px;
-    }
+  .about-section {
+    padding: 60px 60px;
+  }
+  .about-content {
+    width: 100%;
+  }
+  .about-left {
+    width: 100%;
+  }
+  .about-image-1 {
+    margin-top: 120px;
+    margin-right: -50px;
+  }
+  .brand-story-section,
+  .collections-story-section,
+  .contact-section,
+  .stores-section {
+    padding: 60px 60px;
+  }
+  .collection-story-block {
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+  }
+  .collection-story-block.reverse {
+    grid-template-columns: 1fr 300px;
+  }
 }
-
 @media (max-width: 1024px) {
-    .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 40px;
-    }
-
-    .hero-text {
-        align-items: center;
-    }
-
-    .hero-title {
-        max-width: 100%;
-    }
-
-    .hero-images {
-        grid-template-columns: 1fr 1fr;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .hero-image-2 {
-        margin-top: 0;
-    }
-
-    .about-section {
-        padding: 60px 40px;
-    }
-
-    .about-image-1 {
-        margin-top: 80px;
-        margin-right: -40px;
-    }
-
-    .about-image-2 {
-        border-radius: 0 80px 0 0;
-    }
-
-    .collections-section {
-        padding: 60px 40px;
-    }
-
-    .collections-grid {
-        grid-template-columns: 1fr;
-        gap: 60px;
-    }
-
-    .featured-section {
-        padding: 60px 40px;
-    }
-
-    .featured-grid {
-        grid-template-columns: 1.5fr 1fr 1fr;
-        gap: 15px;
-    }
-
-    .featured-large {
-        min-height: 350px;
-    }
-
-    .featured-tall {
-        min-height: 600px;
-    }
-
-    .featured-small-top {
-        min-height: 220px;
-    }
-
-    .featured-small-bottom {
-        max-width: 220px;
-        min-height: 230px;
-    }
-
-    .featured-text {
-        margin-left: 240px;
-        max-width: 240px;
-        padding: 15px;
-    }
-
-    .featured-tall-bottom {
-        min-height: 350px;
-    }
-
-    .craftsmanship-title {
-        font-size: 28px;
-    }
-
-    .craftsmanship-text {
-        font-size: 16px;
-    }
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 40px;
+  }
+  .hero-text {
+    align-items: center;
+  }
+  .hero-title {
+    max-width: 100%;
+  }
+  .hero-images {
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .hero-image-2 {
+    margin-top: 0;
+  }
+  .about-section {
+    padding: 60px 40px;
+  }
+  .about-image-1 {
+    margin-top: 80px;
+    margin-right: -40px;
+  }
+  .about-image-2 {
+    border-radius: 0 80px 0 0;
+  }
+  .collections-section {
+    padding: 60px 40px;
+  }
+  .collections-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .featured-section {
+    padding: 60px 40px;
+  }
+  .featured-grid {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 15px;
+  }
+  .featured-large {
+    min-height: 350px;
+  }
+  .featured-tall {
+    min-height: 600px;
+  }
+  .featured-small-top {
+    min-height: 220px;
+  }
+  .featured-small-bottom {
+    max-width: 220px;
+    min-height: 230px;
+  }
+  .featured-text {
+    margin-left: 240px;
+    max-width: 240px;
+    padding: 15px;
+  }
+  .featured-tall-bottom {
+    min-height: 350px;
+  }
+  .craftsmanship-title {
+    font-size: 28px;
+  }
+  .craftsmanship-text {
+    font-size: 16px;
+  }
+  .brand-story-header {
+    grid-template-columns: 1fr;
+  }
+  .brand-story-grid {
+    grid-template-columns: 1fr;
+  }
+  .collection-story-block {
+    grid-template-columns: 1fr;
+  }
+  .collection-story-block.reverse {
+    grid-template-columns: 1fr;
+  }
+  .collection-story-block.reverse .collection-story-image {
+    order: 1;
+  }
+  .collection-story-block.reverse .collection-story-text {
+    order: 2;
+  }
+  .contact-boxes,
+  .stores-grid {
+    grid-template-columns: 1fr;
+  }
+  .store-card {
+    height: 400px;
+  }
 }
-
 @media (max-width: 768px) {
-    .header-nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        padding: 30px 20px;
-    }
-
-    .nav-link {
-        padding-top: 0;
-    }
-
-    .header-logo {
-        order: -1;
-        width: 200px;
-    }
-
-    .hero-content {
-        padding: 30px 20px 60px;
-    }
-
-    .hero-images {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .about-section {
-        padding: 60px 20px;
-    }
-
-    .about-images {
-        flex-wrap: wrap;
-    }
-
-    .about-image-1 {
-        margin-top: 60px;
-        margin-right: -30px;
-    }
-
-    .about-image-2 {
-        border-radius: 0 60px 0 0;
-    }
-
-    .featured-section {
-        padding: 60px 20px;
-    }
-
-    .featured-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-    }
-
-    .featured-large {
-        grid-column: 1 / 3;
-        grid-row: 1;
-        min-height: 300px;
-    }
-
-    .featured-tall {
-        grid-column: 1;
-        grid-row: 2 / 4;
-        min-height: 500px;
-    }
-
-    .featured-small-top {
-        grid-column: 2;
-        grid-row: 2;
-        min-height: 200px;
-    }
-
-    .featured-small-bottom {
-        grid-column: 1;
-        grid-row: 4;
-        max-width: 100%;
-        min-height: 200px;
-    }
-
-    .featured-text {
-        grid-column: 2;
-        grid-row: 3;
-        margin-left: 0;
-        max-width: 100%;
-    }
-
-    .featured-tall-bottom {
-        grid-column: 2;
-        grid-row: 4;
-        min-height: 250px;
-    }
-
-    .collections-section,
-    .instagram-section {
-        padding: 60px 20px;
-    }
-
-    .footer {
-        flex-direction: column;
-        padding: 40px 20px;
-    }
-
-    .featured-grid,
-    .instagram-grid {
-        grid-template-columns: 1fr;
-    }
+  .header-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+  .nav-link {
+    padding-top: 0;
+  }
+  .header-logo {
+    order: -1;
+    width: 200px;
+  }
+  .hero-content {
+    padding: 30px 20px 60px;
+  }
+  .hero-images {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .about-section {
+    padding: 60px 20px;
+  }
+  .about-images {
+    flex-wrap: wrap;
+  }
+  .about-image-1 {
+    margin-top: 60px;
+    margin-right: -30px;
+  }
+  .about-image-2 {
+    border-radius: 0 60px 0 0;
+  }
+  .featured-section {
+    padding: 60px 20px;
+  }
+  .featured-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .featured-large {
+    grid-column: 1/3;
+    grid-row: 1;
+    min-height: 300px;
+  }
+  .featured-tall {
+    grid-column: 1;
+    grid-row: 2/4;
+    min-height: 500px;
+  }
+  .featured-small-top {
+    grid-column: 2;
+    grid-row: 2;
+    min-height: 200px;
+  }
+  .featured-small-bottom {
+    grid-column: 1;
+    grid-row: 4;
+    max-width: 100%;
+    min-height: 200px;
+  }
+  .featured-text {
+    grid-column: 2;
+    grid-row: 3;
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .featured-tall-bottom {
+    grid-column: 2;
+    grid-row: 4;
+    min-height: 250px;
+  }
+  .collections-section,
+  .instagram-section {
+    padding: 60px 20px;
+  }
+  .footer {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .featured-grid,
+  .instagram-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-hero-images {
+    flex-direction: column;
+  }
+  .about-hero-image-main,
+  .about-hero-image-side {
+    width: 100%;
+    height: 300px;
+    margin-top: 0;
+  }
+  .brand-story-section,
+  .collections-story-section,
+  .contact-section,
+  .stores-section {
+    padding: 60px 20px;
+  }
+  .brand-story-image-tall {
+    width: 100%;
+    height: 400px;
+  }
 }
-
 @media (max-width: 480px) {
-    .hero-title {
-        font-size: 32px;
-    }
-
-    .about-title,
-    .featured-title,
-    .collections-title,
-    .instagram-title {
-        font-size: 28px;
-    }
-
-    .about-quote {
-        font-size: 24px;
-    }
-
-    .header-logo {
-        width: 160px;
-    }
-
-    .about-images {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .about-image-1 {
-        margin-top: 0;
-        margin-right: 0;
-    }
-
-    .about-image-2 {
-        border-radius: 0 40px 0 0;
-    }
+  .hero-title {
+    font-size: 32px;
+  }
+  .about-title,
+  .featured-title,
+  .collections-title,
+  .instagram-title {
+    font-size: 28px;
+  }
+  .about-quote {
+    font-size: 24px;
+  }
+  .header-logo {
+    width: 160px;
+  }
+  .about-images {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about-image-1 {
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .about-image-2 {
+    border-radius: 0 40px 0 0;
+  }
+  .store-card {
+    height: 350px;
+  }
 }
+.katalog-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 0 60px;
+  width: 100%;
+  background-color: #eee2e2;
+  height: 125px;
+}
+
+.katalog-nav-link {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #2a0e0e;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+.katalog-nav-link:hover {
+  opacity: 0.7;
+}
+
+.katalog-logo {
+  width: 180px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.katalog-logo-text {
+  font-family: "Yeseva One", serif;
+  font-size: 40px;
+  color: #2a0e0e;
+}
+
+.katalog-hero {
+  background-color: #601e1e;
+  padding: 80px 100px;
+  min-height: 505px;
+}
+
+.katalog-hero-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.katalog-hero-content {
+  max-width: 486px;
+  padding-top: 40px;
+}
+
+.katalog-hero-title {
+  font-family: "Yeseva One", serif;
+  font-size: 60px;
+  line-height: 1.05;
+  color: #f7f5f1;
+  margin-bottom: 20px;
+}
+
+.katalog-hero-text {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 25px;
+  line-height: 1.5;
+  color: #f7f5f1;
+}
+
+.katalog-filters {
+  background-color: #f7f5f1;
+  padding: 40px 100px;
+  overflow-x: auto;
+}
+
+.katalog-filters-inner {
+  display: flex;
+  gap: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  background-color: #a45d4e;
+  color: #f7f5f1;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 0 32px 32px 0;
+  border-bottom-left-radius: 32px;
+  border-top-right-radius: 32px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(42, 14, 14, 0.2);
+  text-shadow: 0 1px 8px rgba(42, 14, 14, 0.25);
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  min-width: 140px;
+}
+.filter-btn:hover {
+  background-color: #81493e;
+}
+.filter-btn.filter-btn-active {
+  background-color: #6a3030;
+}
+.filter-btn.filter-btn-secondary {
+  background-color: #a45d4e;
+}
+.filter-btn.filter-btn-small {
+  min-width: 120px;
+  padding: 14px 28px;
+}
+
+.katalog-collection {
+  padding: 60px 100px;
+  background-color: #f7f5f1;
+}
+
+.katalog-collection-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.collection-header {
+  margin-bottom: 40px;
+}
+
+.collection-main-title {
+  font-family: "Yeseva One", serif;
+  font-size: clamp(36px, 4vw, 49px);
+  line-height: 1.05;
+  color: #2a0e0e;
+  margin-bottom: 20px;
+}
+
+.collection-intro {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #2a0e0e;
+  margin-bottom: 16px;
+}
+
+.duval-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 384px);
+  grid-template-rows: auto;
+  gap: 24px;
+  justify-content: center;
+}
+
+.duval-item {
+  position: relative;
+  overflow: hidden;
+  background-color: #bfa1a1;
+}
+.duval-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.duval-product-1,
+.duval-product-2,
+.duval-product-3 {
+  width: 384px;
+  height: 384px;
+}
+
+.duval-product-1 {
+  border-radius: 0;
+}
+
+.duval-product-2 {
+  border-radius: 120px 0 0 0;
+}
+
+.duval-product-3 {
+  border-radius: 120px 0 0 0;
+}
+
+.duval-product-4 {
+  width: 384px;
+  height: 384px;
+}
+
+.duval-feature-image {
+  grid-column: 2/4;
+  width: 792px;
+  height: 590px;
+  border-radius: 0 0 120px 0;
+}
+
+.duval-textbox {
+  padding: 20px;
+  background-color: transparent;
+}
+.duval-textbox h3 {
+  font-family: "Yeseva One", serif;
+  font-size: 25px;
+  line-height: 1.05;
+  color: #2a0e0e;
+  margin-bottom: 8px;
+}
+.duval-textbox p {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2a0e0e;
+}
+
+.duval-textbox-1 {
+  width: 384px;
+}
+
+.duval-product-5 {
+  width: 384px;
+  height: 384px;
+}
+
+.duval-textbox-2 {
+  width: 384px;
+}
+
+.duval-atmosphere-image {
+  width: 384px;
+  height: 614px;
+}
+
+.duval-product-6 {
+  width: 384px;
+  height: 384px;
+}
+
+.duval-product-7 {
+  width: 384px;
+  height: 384px;
+  border-radius: 0 0 0 120px;
+}
+
+.product-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 30px;
+  background: linear-gradient(to top, rgba(42, 14, 14, 0.8) 0%, rgba(42, 14, 14, 0.8) 21.43%, rgba(42, 14, 14, 0.2) 93.6%);
+  color: #f7f5f1;
+}
+
+.product-name {
+  font-family: "Yeseva One", serif;
+  font-size: 31px;
+  line-height: 1.05;
+  color: #f7f5f1;
+  text-align: center;
+}
+
+.product-subtitle {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.05;
+  color: #f7f5f1;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.product-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price-label {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #f7f5f1;
+}
+
+.product-price {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #f7f5f1;
+}
+
+.feature-text-overlay,
+.atmosphere-text-overlay {
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  width: 304px;
+  color: #f7f5f1;
+}
+.feature-text-overlay h3,
+.atmosphere-text-overlay h3 {
+  font-family: "Yeseva One", serif;
+  font-size: 25px;
+  line-height: 1.05;
+  margin-bottom: 8px;
+}
+.feature-text-overlay p,
+.atmosphere-text-overlay p {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.atmosphere-text-overlay {
+  top: auto;
+  bottom: 40px;
+}
+
+.katalog-udvalgt {
+  padding: 60px 100px;
+  background-color: #f7f5f1;
+}
+
+.katalog-udvalgt-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.udvalgt-header {
+  margin-bottom: 40px;
+}
+
+.udvalgt-title {
+  font-family: "Yeseva One", serif;
+  font-size: clamp(36px, 4vw, 49px);
+  line-height: 1.05;
+  color: #2a0e0e;
+  margin-bottom: 16px;
+}
+
+.udvalgt-intro {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #2a0e0e;
+  max-width: 588px;
+}
+
+.udvalgt-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 282px);
+  gap: 24px;
+  justify-content: start;
+}
+
+.udvalgt-item {
+  position: relative;
+  overflow: hidden;
+  background-color: #bfa1a1;
+  height: 282px;
+}
+.udvalgt-item:nth-child(3), .udvalgt-item:nth-child(4) {
+  height: 487px;
+}
+.udvalgt-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.udvalgt-item:nth-child(4) {
+  border-radius: 120px 0 0 0;
+}
+
+.udvalgt-product-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 30px;
+  background: linear-gradient(to top, rgba(42, 14, 14, 0.85) 0%, rgba(42, 14, 14, 0.776) 25.88%, rgba(42, 14, 14, 0.7) 52.18%, rgba(42, 14, 14, 0.475) 88.8%, rgba(42, 14, 14, 0.2) 123.55%);
+  color: #f7f5f1;
+}
+
+.udvalgt-product-name {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.udvalgt-product-price {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.udvalgt-disclaimer {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #2a0e0e;
+  text-align: right;
+  margin-top: 16px;
+}
+
+.dinero-grid {
+  display: grid;
+  grid-template-columns: 384px 384px 384px;
+  grid-template-rows: 384px 384px;
+  gap: 24px;
+  justify-content: center;
+}
+
+.dinero-item {
+  position: relative;
+  overflow: hidden;
+  background-color: #bfa1a1;
+}
+.dinero-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.dinero-item-1 {
+  border-radius: 120px 0 0 0;
+}
+
+.dinero-item-2 {
+  position: relative;
+}
+
+.dinero-item-3 {
+  grid-row: 1/3;
+  grid-column: 3;
+  height: 792px;
+  border-radius: 120px 0 0 0;
+}
+
+.dinero-item-4 {
+  grid-column: 1/3;
+  width: 792px;
+}
+
+.dinero-coming-soon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.dinero-coming-soon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(9px);
+}
+
+.coming-soon-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #2a0e0e;
+}
+.coming-soon-overlay .coming-soon-icon {
+  width: 114px;
+  height: 113px;
+  margin-bottom: 16px;
+  filter: none;
+}
+.coming-soon-overlay h3 {
+  font-family: "Yeseva One", serif;
+  font-size: clamp(28px, 3vw, 39px);
+  line-height: 1.05;
+}
+
+.dinero-text-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 304px;
+  color: #f7f5f1;
+}
+.dinero-text-overlay h3 {
+  font-family: "Yeseva One", serif;
+  font-size: 25px;
+  line-height: 1.05;
+  margin-bottom: 8px;
+}
+.dinero-text-overlay p {
+  font-family: "Inter", "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.dinero-text-bottom {
+  bottom: 80px;
+}
+
+.katalog-footer {
+  padding: 60px 100px;
+  background-color: #f7f5f1;
+  display: grid;
+  grid-template-columns: 270px 190px 1fr auto;
+  gap: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-column-title {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.footer-info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-info-item .footer-info-title {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+.footer-info-item .footer-info-text {
+  font-family: "Barlow", sans-serif;
+  font-size: 13px;
+  color: #000;
+}
+
+.footer-link-list {
+  list-style: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+.footer-link-list li {
+  margin-bottom: 8px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 8px;
+  font-family: "Barlow", sans-serif;
+  font-size: 13px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: #000;
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  font-family: "Barlow", sans-serif;
+  font-size: 13px;
+  color: #000;
+  line-height: 1.15;
+}
+
+.footer-logo-large {
+  width: 194px;
+}
+.footer-logo-large img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  .duval-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .duval-item,
+  .duval-product-1,
+  .duval-product-2,
+  .duval-product-3,
+  .duval-product-4,
+  .duval-product-5,
+  .duval-product-6,
+  .duval-product-7 {
+    width: 100%;
+    height: 350px;
+  }
+  .duval-feature-image {
+    grid-column: 1/3;
+    width: 100%;
+    height: 450px;
+  }
+  .duval-atmosphere-image {
+    height: 450px;
+  }
+  .dinero-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .dinero-item-3 {
+    grid-row: auto;
+    grid-column: auto;
+    height: 450px;
+  }
+  .dinero-item-4 {
+    grid-column: 1/3;
+    width: 100%;
+  }
+  .udvalgt-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .katalog-footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .katalog-nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+  .katalog-hero {
+    padding: 40px 20px;
+    min-height: auto;
+  }
+  .katalog-hero-content {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+  .katalog-hero-title {
+    font-size: 40px;
+  }
+  .katalog-filters {
+    padding: 20px;
+  }
+  .katalog-filters-inner {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 16px;
+  }
+  .katalog-collection {
+    padding: 40px 20px;
+  }
+  .duval-grid,
+  .dinero-grid {
+    grid-template-columns: 1fr;
+  }
+  .duval-feature-image,
+  .dinero-item-4 {
+    grid-column: 1;
+  }
+  .udvalgt-grid {
+    grid-template-columns: 1fr;
+  }
+  .udvalgt-item,
+  .udvalgt-item:nth-child(3),
+  .udvalgt-item:nth-child(4) {
+    height: 300px;
+  }
+  .katalog-footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-logo-large {
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
