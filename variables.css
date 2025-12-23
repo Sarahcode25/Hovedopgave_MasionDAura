@@ -1,0 +1,240 @@
+/* CSS Variables - Type Scale (Major Third: 1.25) */
+/* Mobile First Approach */
+
+:root {
+    /* Font Families */
+    --font-heading: 'Yeseva One', serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* Color Palette */
+    /* White Chalk - Fundamentet - Warm off-white background */
+    --color-white-chalk: #F7F5F1;
+    
+    /* Smoke Dragon - Brobyggeren - Warm beige/grey for sections, cards, secondary surfaces */
+    --color-smoke-dragon: #CABCAC;
+    
+    /* Arcane Red - Tyngde og seriøsitet - Deep reddish-brown for headings, navigation, visual anchors */
+    --color-arcane-red: #6A3030;
+    
+    /* Italian Roast - Ankeret - Very dark brown, almost black for text, icons, strong contrast */
+    --color-italian-roast: #2A0E0E;
+    
+    /* Chutney - Den menneskelige varme - Terracotta/burnt orange, brand's recognizable color */
+    --color-chutney: #A45D4E;
+    
+    /* Mobile Type Scale (Base: 16px) */
+    /* Major Third Ratio: 1.25 */
+    --font-size-xs: 10px;      /* 16 / 1.25^2 = 10.24 → 10 */
+    --font-size-sm: 13px;      /* 16 / 1.25 = 12.8 → 13 */
+    --font-size-base: 16px;    /* Base */
+    --font-size-md: 20px;      /* 16 * 1.25 = 20 */
+    --font-size-lg: 25px;      /* 20 * 1.25 = 25 */
+    --font-size-xl: 31px;      /* 25 * 1.25 = 31.25 → 31 */
+    --font-size-2xl: 39px;     /* 31 * 1.25 = 38.75 → 39 */
+    --font-size-3xl: 49px;     /* 39 * 1.25 = 48.75 → 49 */
+    --font-size-4xl: 61px;     /* 49 * 1.25 = 61.25 → 61 */
+    
+    /* Line Heights */
+    --line-height-tight: 1.05;
+    --line-height-normal: 1.15;
+    --line-height-relaxed: 1.5;
+    
+    /* Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    
+    /* Spacing Scale - Mobile First (små verdier for mobil) */
+    --spacing-xs: 6px;
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 40px;
+    --spacing-xxl: 48px;
+    --spacing-section: 60px;
+    
+    /* Layout - Mobile First (100% bredde for mobil) */
+    --max-width-content: 100%;
+    --max-width-inner: 100%;
+    --max-width-narrow: 100%;
+    
+    /* Border radius - Mobile First (mindre verdier for mobil) */
+    --radius-sm: 12px;
+    --radius-md: 32px;
+    --radius-lg: 64px;
+    
+    /* Shadows */
+    --shadow-card: 0 20px 40px rgba(0, 0, 0, 0.3);
+    
+    /* Transitions */
+    --transition-fast: 0.3s ease;
+    
+    /* Legacy aliases for backward compatibility - Mobile First */
+    --color-primary: var(--color-italian-roast);
+    --color-background: var(--color-white-chalk);
+    --color-text-dark: var(--color-italian-roast);
+    --color-text-light: var(--color-white-chalk);
+    --color-tan: var(--color-smoke-dragon);
+    --color-accent-light: #d2b0b0;
+    --color-black: #000;
+    --font-size-nav: var(--font-size-sm);
+    --font-size-h1: clamp(28px, 7vw, 61px);
+    --font-size-h2: clamp(24px, 6vw, 49px);
+    --font-size-h3: clamp(20px, 5vw, 39px);
+    --font-size-h4: clamp(18px, 4vw, 31px);
+    --font-size-h5: 20px;
+    --font-size-body: 16px;
+    --font-size-body-small: 14px;
+    --line-height-heading: var(--line-height-tight);
+    --line-height-body: var(--line-height-normal);
+}
+
+/* Tablet Type Scale (Base: 18px) - Mobile First */
+@media (min-width: 768px) {
+    :root {
+        --font-size-xs: 12px;      /* 18 / 1.25^2 = 11.52 → 12 */
+        --font-size-sm: 14px;      /* 18 / 1.25 = 14.4 → 14 */
+        --font-size-base: 18px;   /* Base */
+        --font-size-md: 23px;      /* 18 * 1.25 = 22.5 → 23 */
+        --font-size-lg: 29px;      /* 23 * 1.25 = 28.75 → 29 */
+        --font-size-xl: 36px;      /* 29 * 1.25 = 36.25 → 36 */
+        --font-size-2xl: 45px;     /* 36 * 1.25 = 45 */
+        --font-size-3xl: 56px;     /* 45 * 1.25 = 56.25 → 56 */
+        --font-size-4xl: 70px;     /* 56 * 1.25 = 70 */
+        
+        /* Tablet spacing - større verdier */
+        --spacing-xs: 8px;
+        --spacing-sm: 16px;
+        --spacing-md: 28px;
+        --spacing-lg: 52px;
+        --spacing-xl: 68px;
+        --spacing-xxl: 72px;
+        --spacing-section: 80px;
+        
+        /* Tablet layout - begrænsede bredder */
+        --max-width-content: 1440px;
+        --max-width-inner: 1200px;
+        --max-width-narrow: 960px;
+        
+        /* Tablet border radius - større verdier */
+        --radius-sm: 16px;
+        --radius-md: 48px;
+        --radius-lg: 96px;
+        
+        /* Legacy font sizes for tablet */
+        --font-size-nav: var(--font-size-md);
+        --font-size-h1: clamp(40px, 5vw, 61px);
+        --font-size-h2: clamp(36px, 4vw, 49px);
+        --font-size-h3: clamp(28px, 3vw, 39px);
+        --font-size-h4: clamp(24px, 2.5vw, 31px);
+        --font-size-h5: 25px;
+        --font-size-body: 20px;
+        --font-size-body-small: 16px;
+    }
+}
+
+/* Desktop Type Scale (Base: 20px) - Mobile First */
+@media (min-width: 1024px) {
+    :root {
+        --font-size-xs: 13px;      /* 20 / 1.25^2 = 12.8 → 13 */
+        --font-size-sm: 16px;      /* 20 / 1.25 = 16 */
+        --font-size-base: 20px;   /* Base */
+        --font-size-md: 25px;      /* 20 * 1.25 = 25 */
+        --font-size-lg: 31px;      /* 25 * 1.25 = 31.25 → 31 */
+        --font-size-xl: 39px;      /* 31 * 1.25 = 38.75 → 39 */
+        --font-size-2xl: 49px;     /* 39 * 1.25 = 48.75 → 49 */
+        --font-size-3xl: 61px;     /* 49 * 1.25 = 61.25 → 61 */
+        --font-size-4xl: 76px;     /* 61 * 1.25 = 76.25 → 76 */
+        
+        /* Desktop spacing - største verdier */
+        --spacing-xs: 8px;
+        --spacing-sm: 16px;
+        --spacing-md: 24px;
+        --spacing-lg: 48px;
+        --spacing-xl: 64px;
+        --spacing-xxl: 80px;
+        --spacing-section: 100px;
+        
+        /* Desktop border radius - største verdier */
+        --radius-sm: 20px;
+        --radius-md: 64px;
+        --radius-lg: 120px;
+    }
+}
+
+/* Typography Utility Classes */
+.heading-1 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-4xl);
+    line-height: var(--line-height-tight);
+    font-weight: var(--font-weight-normal);
+}
+
+.heading-2 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-3xl);
+    line-height: var(--line-height-tight);
+    font-weight: var(--font-weight-normal);
+}
+
+.heading-3 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-2xl);
+    line-height: var(--line-height-tight);
+    font-weight: var(--font-weight-normal);
+}
+
+.heading-4 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-tight);
+    font-weight: var(--font-weight-normal);
+}
+
+.heading-5 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-tight);
+    font-weight: var(--font-weight-normal);
+}
+
+.heading-6 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-tight);
+    font-weight: var(--font-weight-normal);
+}
+
+.body-large {
+    font-family: var(--font-body);
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-normal);
+    font-weight: var(--font-weight-normal);
+}
+
+.body-base {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
+    font-weight: var(--font-weight-normal);
+}
+
+.body-small {
+    font-family: var(--font-body);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-normal);
+    font-weight: var(--font-weight-normal);
+}
+
+.body-xs {
+    font-family: var(--font-body);
+    font-size: var(--font-size-xs);
+    line-height: var(--line-height-normal);
+    font-weight: var(--font-weight-normal);
+}
+
+.body-semibold {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
+    font-weight: var(--font-weight-semibold);
+}

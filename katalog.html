@@ -1,285 +1,357 @@
 <!DOCTYPE html>
+<!-- 
+    KATALOG SIDE - Maison d'Aure
+    Denne side viser produktkataloget med Düval og Dinero kollektioner
+    Struktur: Navigation → Hero → Filter → Kollektioner → Footer
+-->
 <html lang="da">
 <head>
+    <!-- Basis HTML Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katalog - Maison d'Aure</title>
+    
+    <!-- SEO Meta Tags - Forbedrer søgemaskineoptimering -->
+    <title>Katalog - Maison d'Aure | Hestesmykker i Düval og Dineo Kollektioner</title>
+    <meta name="description" content="Udforsk Maison d'Aures katalog af håndlavede hestesmykker. Se Düval og Dineo kollektionerne i sterlingsølv, guld og forgyldning. Halskæder, brocher og armbånd til ryttere.">
+    <meta name="keywords" content="hestesmykker katalog, Düval kollektion, Dineo kollektion, guld hestesmykker, sølv hestesmykker, halskæder, brocher, armbånd, hestesmykker Danmark">
+    <meta name="author" content="Maison d'Aure">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.maisondaure.dk/katalog.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.maisondaure.dk/katalog.html">
+    <meta property="og:title" content="Katalog - Maison d'Aure Hestesmykker">
+    <meta property="og:description" content="Udforsk vores katalog af håndlavede hestesmykker i Düval og Dineo kollektioner.">
+    <meta property="og:image" content="https://www.maisondaure.dk/img/Logo.svg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Katalog - Maison d'Aure Hestesmykker">
+    <meta name="twitter:description" content="Udforsk vores katalog af håndlavede hestesmykker i Düval og Dineo kollektioner.">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Barlow:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main class="katalog-page">
-    <!-- Navigation -->
-    <nav class="katalog-nav">
-        <a href="#kontakt" class="katalog-nav-link">Kontakt</a>
-        <div class="katalog-logo">
-            <img src="img/logo-header.svg" alt="Maison d'Aure Logo">
-        </div>
-        <a href="om-os.html" class="katalog-nav-link">Om os</a>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="katalog-hero">
-        <div class="katalog-hero-inner">
-            <div class="katalog-hero-content">
-                <h1 class="katalog-hero-title">Smykker formet af relationerne</h1>
-                <p class="katalog-hero-text">Et univers af smykker inspireret af de bånd, der opstår mellem menneske og hest. Fra den første hjertehest til det samspil, der vokser med tiden.</p>
+        <!-- 
+            NAVIGATION - Hovedmenu
+            Indeholder: Kollektioner link, Logo (link til forsiden), Om os link
+            Position: Absolut positioneret over hero-sektionen
+        -->
+        <nav class="katalog-nav" role="navigation" aria-label="Hovednavigation">
+            <a href="katalog.html" class="katalog-nav-link" aria-current="page">Kollektioner</a>
+            <div class="katalog-logo">
+                <a href="index.html" aria-label="Gå til forsiden">
+                    <img src="img/Logo.svg" alt="Maison d'Aure logo - Håndlavede hestesmykker i dansk design" width="134" height="91">
+                </a>
             </div>
-        </div>
-    </section>
+            <a href="om-os.html" class="katalog-nav-link">Om os</a>
+        </nav>
 
-    <!-- Filter Buttons -->
-    <section class="katalog-filters">
-        <div class="katalog-filters-inner">
-            <button class="filter-btn filter-btn-secondary">Udvalgt til dig</button>
-            <button class="filter-btn filter-btn-active">Düval kollektionen</button>
-            <button class="filter-btn">Dinero kollektionen</button>
-            <button class="filter-btn">Guld smykker</button>
-            <button class="filter-btn">Sølv smykker</button>
-            <button class="filter-btn">Halskæder</button>
-            <button class="filter-btn filter-btn-small">Brocher</button>
-            <button class="filter-btn filter-btn-small">Armbånd</button>
-        </div>
-    </section>
-
-    <!-- Düval Collection Section -->
-    <section class="katalog-collection duval-collection">
-        <div class="katalog-collection-inner">
-            <div class="collection-header">
-                <h2 class="collection-main-title">Düval, en kollektion formet af relationer</h2>
-                <p class="collection-intro">Nogle relationer definerer os, uden at kræve opmærksomhed. De vokser langsomt, gennem gentagelser, tillid og nærvær. Düval-kollektionen er skabt som en hyldest til netop disse bånd – de stille relationer, der sætter varige spor. Smykkerne er inspireret af den første hjertehest. Ikke som et portræt, men som en fornemmelse. En ro, en tryghed og et fællesskab, der blev bygget dag for dag.</p>
+        <!-- 
+            HERO SEKTION - Hovedbanner med baggrundsbillede
+            Indeholder: Hovedoverskrift (h1) og introduktionstekst
+            Baggrund: katalogbg.png
+            Position: Under navigationen, dækker hele header-området
+        -->
+        <header class="katalog-hero" role="banner">
+            <div class="katalog-hero-inner">
+                <div class="katalog-hero-content">
+                    <h1 class="katalog-hero-title">Smykker formet af relationerne</h1>
+                    <p class="katalog-hero-text">Et univers af smykker inspireret af de bånd, der opstår mellem menneske og hest. Fra den første hjertehest til det samspil, der vokser med tiden.</p>
+                </div>
             </div>
+        </header>
 
-            <div class="duval-grid">
-                <!-- Row 1: 3 products -->
-                <div class="duval-item duval-product-1">
-                    <img src="img/katalog-dsc2461.png" alt="Promesse d'Or">
-                    <div class="product-info">
-                        <h3 class="product-name">Promesse d'Or</h3>
-                        <p class="product-subtitle">Gyldent løfte</p>
-                        <div class="product-price-row">
-                            <span class="product-price-label">Vejledende pris</span>
-                            <span class="product-price">Kommer snart</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="duval-item duval-product-2">
-                    <img src="img/katalog-dsc2657.png" alt="Gardien">
-                    <div class="product-info">
-                        <h3 class="product-name">Gardien</h3>
-                        <p class="product-subtitle">Beskytter</p>
-                        <div class="product-price-row">
-                            <span class="product-price-label">Vejledende pris</span>
-                            <span class="product-price">995 DKK</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="duval-item duval-product-3">
-                    <img src="img/katalog-dsc2506.png" alt="Cercle Silencieux">
-                    <div class="product-info">
-                        <h3 class="product-name">Cercle Silencieux</h3>
-                        <p class="product-subtitle">Den stille cirkel</p>
-                        <div class="product-price-row">
-                            <span class="product-price-label">Vejledende pris fra</span>
-                            <span class="product-price">695 DKK</span>
-                        </div>
-                    </div>
-                </div>
+        <!-- 
+            FILTER SEKTION - Produktfiltre
+            Indeholder: Knapper til at filtrere produkter (Düval, Udvalgt, Dinero)
+            Layout: Flexbox med space-between for jævn fordeling
+            Funktion: Filterknapper (JavaScript funktionalitet kan tilføjes senere)
+        -->
+        <section class="katalog-filters" aria-label="Produktfiltre">
+            <div class="katalog-filters-inner" role="group" aria-label="Filtrer kollektioner">
+                <button class="filter-btn filter-btn-active" aria-label="Vis Düval kollektionen" aria-pressed="true">Düval kollektionen</button>
+                <button class="filter-btn filter-btn-secondary" aria-label="Vis udvalgte hestesmykker" aria-pressed="false">Udvalgt til dig</button>
+                <button class="filter-btn" aria-label="Vis Dinero kollektionen" aria-pressed="false">Dinero kollektionen</button>
+            </div>
+        </section>
+ 
+        <!-- 
+            DÜVAL KOLLEKTION SEKTION
+            Viser alle produkter fra Düval kollektionen
+            Struktur: Header med beskrivelse → Grid med produkter og tekstbokse
+            Layout: CSS Grid med 3 kolonner på desktop, 1 kolonne på mobil
+        -->
+        <section class="katalog-collection duval-collection" aria-labelledby="duval-title">
+            <div class="katalog-collection-inner">
+                <!-- Kollektion Header - Introduktion til Düval kollektionen -->
+                <header class="collection-header">
+                    <h2 id="duval-title" class="collection-main-title">Düval, en kollektion formet af relationer</h2>
+                    <p class="collection-intro">Nogle relationer definerer os, uden at kræve opmærksomhed. De vokser langsomt, gennem gentagelser, tillid og nærvær. Düval-kollektionen er skabt som en hyldest til netop disse bånd – de stille relationer, der sætter varige spor. Smykkerne er inspireret af den første hjertehest. Ikke som et portræt, men som en fornemmelse. En ro, en tryghed og et fællesskab, der blev bygget dag for dag.</p>
+                </header>
 
-                <!-- Column 1: Sub-grid with Le Lien, Textbox, Atmosphere (rowspan 2) -->
-                <div class="duval-col1-wrapper">
-                    <div class="duval-item duval-product-4">
-                        <img src="img/katalog-dsc2657.png" alt="Le Lien">
+                <!-- Produkt Grid - Grid layout med produkter, tekstbokse og stemningsbilleder -->
+                <div class="duval-grid">
+                    <!-- Første række: 3 produkter side-by-side -->
+                    <article class="duval-item duval-product-1">
+                        <img src="img/katalog-dsc2461.png" alt="Promesse d'Or halskæde fra Düval kollektionen - gyldent løfte hestesmykke i 18K forgyldning" width="384" height="384">
                         <div class="product-info">
-                            <h3 class="product-name">Le Lien</h3>
-                            <p class="product-subtitle">Båndet</p>
+                            <h3 class="product-name">Promesse d'Or</h3>
+                            <p class="product-subtitle">Gyldent løfte</p>
                             <div class="product-price-row">
-                                <span class="product-price-label">Vejledende pris fra</span>
-                                <span class="product-price">6.500 DKK</span>
+                                <span class="product-price-label">Vejledende pris</span>
+                                <span class="product-price">Kommer snart</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="duval-textbox duval-textbox-1">
-                        <h3>Former med tyngde og ro</h3>
-                        <p>Designet i Düval-kollektionen er afrundet og jordnært. Inspireret af styrke uden hastværk og af stabilitet frem for perfektion. Smykkerne er skabt til at føles velkendte fra første øjeblik – som noget, der allerede hører til.</p>
-                    </div>
-                    <div class="duval-item duval-atmosphere-image">
-                        <img src="img/katalog-dsc0356.png" alt="Stemningsbillede">
-                        <div class="atmosphere-text-overlay">
-                            <h3>Et minde, der får lov at leve videre</h3>
-                            <p>Et smykke kan ikke rumme en hel historie. Men det kan bære følelsen af den. Düval-kollektionen er skabt til kvinder, der ved, at de stærkeste relationer ofte er de mest stille.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Column 2-3: Sub-grid with Feature section + Bottom products -->
-                <div class="duval-col23-wrapper">
-                    <!-- Feature section with background (colspan 2) -->
-                    <div class="duval-feature-section">
-                        <!-- Column 1: Text + Product -->
-                        <div class="duval-feature-col1">
-                            <div class="duval-feature-text">
-                                <h3>Smykker, der kan bære en betydning</h3>
-                                <p>Düval er hestesmykker til ryttere og hesteelskere, der ønsker et diskret udtryk med dybde. Smykkerne kan bæres hver dag og fungere som en påmindelse om relationer, der har formet én – og stadig gør det.</p>
-                            </div>
-                            <div class="duval-item duval-product-5">
-                                <img src="img/katalog-dsc2461.png" alt="Promesse">
-                                <div class="product-info">
-                                    <h3 class="product-name">Promesse</h3>
-                                    <p class="product-subtitle">Løfte</p>
-                                    <div class="product-price-row">
-                                        <span class="product-price-label">Vejledende pris</span>
-                                        <span class="product-price">Kommer snart</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column 2: Text at bottom -->
-                        <div class="duval-feature-col2">
-                            <div class="duval-textbox duval-textbox-2">
-                                <h3>Et bånd uden nogle ord</h3>
-                                <p>Forholdet mellem menneske og hest er ofte ordløst. Det består af genkendelse, rutiner og en fælles forståelse. Düval-kollektionen fortolker dette bånd gennem bløde former og afbalancerede proportioner, hvor hvert smykke bærer en stille fortælling.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Bottom products row -->
-                    <div class="duval-item duval-product-6">
-                        <img src="img/katalog-dsc2481.png" alt="Cercle d'Or">
+                    </article>
+                    <article class="duval-item duval-product-2">
+                        <img src="img/katalog-dsc2657.png" alt="Gardien broche fra Düval kollektionen - beskytter hestesmykke i sterlingsølv eller guld" width="384" height="384">
                         <div class="product-info">
-                            <h3 class="product-name">Cercle d'Or</h3>
-                            <p class="product-subtitle">Gylden cirkel</p>
-                            <div class="product-price-row">
-                                <span class="product-price-label">Vejledende pris fra</span>
-                                <span class="product-price">795 DKK</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="duval-item duval-product-7">
-                        <img src="img/katalog-dsc2657.png" alt="Fidélité">
-                        <div class="product-info">
-                            <h3 class="product-name">Fidélité</h3>
-                            <p class="product-subtitle">Loyalitet</p>
+                            <h3 class="product-name">Gardien</h3>
+                            <p class="product-subtitle">Beskytter</p>
                             <div class="product-price-row">
                                 <span class="product-price-label">Vejledende pris</span>
                                 <span class="product-price">995 DKK</span>
                             </div>
                         </div>
+                    </article>
+                    <article class="duval-item duval-product-3">
+                        <img src="img/katalog-dsc2506.png" alt="Cercle Silencieux halskæde fra Düval kollektionen - den stille cirkel hestesmykke i sterlingsølv" width="384" height="384">
+                        <div class="product-info">
+                            <h3 class="product-name">Cercle Silencieux</h3>
+                            <p class="product-subtitle">Den stille cirkel</p>
+                            <div class="product-price-row">
+                                <span class="product-price-label">Vejledende pris fra</span>
+                                <span class="product-price">695 DKK</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 
+                        Venstre kolonne: Le Lien produkt, tekstboks og stemningsbillede
+                        Layout: Vertikal stak med produkt, tekst og billede
+                    -->
+                    <aside class="duval-col1-wrapper">
+                        <article class="duval-item duval-product-4">
+                            <img src="img/katalog-dsc2657.png" alt="Le Lien broche fra Düval kollektionen - båndet hestesmykke med ægte minediamanter i 14K guld" width="384" height="384">
+                            <div class="product-info">
+                                <h3 class="product-name">Le Lien</h3>
+                                <p class="product-subtitle">Båndet</p>
+                                <div class="product-price-row">
+                                    <span class="product-price-label">Vejledende pris fra</span>
+                                    <span class="product-price">6.500 DKK</span>
+                                </div>
+                            </div>
+                        </article>
+                        <aside class="duval-textbox duval-textbox-1">
+                            <h3>Former med tyngde og ro</h3>
+                            <p>Designet i Düval-kollektionen er afrundet og jordnært. Inspireret af styrke uden hastværk og af stabilitet frem for perfektion. Smykkerne er skabt til at føles velkendte fra første øjeblik – som noget, der allerede hører til.</p>
+                        </aside>
+                        <figure class="duval-item duval-atmosphere-image">
+                            <img src="img/katalog-dsc0356.png" alt="Stemningsbillede fra Düval kollektionen - atmosfærisk foto der viser følelsen bag hestesmykkerne" width="384" height="500">
+                            <figcaption class="atmosphere-text-overlay">
+                                <h3>Et minde, der får lov at leve videre</h3>
+                                <p>Et smykke kan ikke rumme en hel historie. Men det kan bære følelsen af den. Düval-kollektionen er skabt til kvinder, der ved, at de stærkeste relationer ofte er de mest stille.</p>
+                            </figcaption>
+                        </figure>
+                    </aside>
+
+                    <!-- 
+                        Højre kolonne (2-3): Feature sektion med baggrund + bundprodukter
+                        Layout: Feature sektion med tekst og produkt, derefter 2 produkter nederst
+                    -->
+                    <div class="duval-col23-wrapper" role="group" aria-label="Düval kollektion produkter">
+                        <!-- Feature sektion med baggrundsbillede og tekst -->
+                        <div class="duval-feature-section">
+                            <!-- Column 1: Text + Product -->
+                            <div class="duval-feature-col1">
+                                <div class="duval-feature-text">
+                                    <h3>Smykker, der kan bære en betydning</h3>
+                                    <p>Düval er hestesmykker til ryttere og hesteelskere, der ønsker et diskret udtryk med dybde. Smykkerne kan bæres hver dag og fungere som en påmindelse om relationer, der har formet én – og stadig gør det.</p>
+                                </div>
+                                <article class="duval-item duval-product-5">
+                                    <img src="img/katalog-dsc2461.png" alt="Promesse halskæde fra Düval kollektionen - løfte hestesmykke i sterlingsølv eller guld" width="384" height="384">
+                                    <div class="product-info">
+                                        <h3 class="product-name">Promesse</h3>
+                                        <p class="product-subtitle">Løfte</p>
+                                        <div class="product-price-row">
+                                            <span class="product-price-label">Vejledende pris</span>
+                                            <span class="product-price">Kommer snart</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Column 2: Text at bottom -->
+                            <div class="duval-feature-col2">
+                                <aside class="duval-textbox duval-textbox-2">
+                                    <h3>Et bånd uden nogle ord</h3>
+                                    <p>Forholdet mellem menneske og hest er ofte ordløst. Det består af genkendelse, rutiner og en fælles forståelse. Düval-kollektionen fortolker dette bånd gennem bløde former og afbalancerede proportioner, hvor hvert smykke bærer en stille fortælling.</p>
+                                </aside>
+                            </div>
+                        </div>
+                        <!-- Bottom products row -->
+                        <article class="duval-item duval-product-6">
+                            <img src="img/katalog-dsc2481.png" alt="Cercle d'Or halskæde fra Düval kollektionen - gylden cirkel hestesmykke i 18K forgyldning" width="384" height="384">
+                            <div class="product-info">
+                                <h3 class="product-name">Cercle d'Or</h3>
+                                <p class="product-subtitle">Gylden cirkel</p>
+                                <div class="product-price-row">
+                                    <span class="product-price-label">Vejledende pris fra</span>
+                                    <span class="product-price">795 DKK</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="duval-item duval-product-7">
+                            <img src="img/katalog-dsc2657.png" alt="Fidélité broche fra Düval kollektionen - loyalitet hestesmykke i sterlingsølv eller guld" width="384" height="384">
+                            <div class="product-info">
+                                <h3 class="product-name">Fidélité</h3>
+                                <p class="product-subtitle">Loyalitet</p>
+                                <div class="product-price-row">
+                                    <span class="product-price-label">Vejledende pris</span>
+                                    <span class="product-price">995 DKK</span>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Udvalgt til dig Section -->
-    <section class="katalog-udvalgt">
-        <div class="katalog-udvalgt-inner">
-            <div class="udvalgt-layout">
-                <!-- Left column: Header + 2 square products -->
-                <div class="udvalgt-left">
-                    <div class="udvalgt-header">
-                        <h2 class="udvalgt-title">Udvalgt til dig</h2>
-                        <p class="udvalgt-intro">Et udvalg af hestesmykker, sammensat med blik for form, ro og balance. Smykker i dansk design, der passer naturligt ind i dit univers.</p>
+        <!-- 
+            UDVALGT TIL DIG SEKTION - Udvalgte produkter
+            Viser et udvalg af de mest populære produkter
+            Layout: 2-kolonne grid med små og høje produkter
+        -->
+        <section class="katalog-udvalgt" aria-labelledby="udvalgt-title">
+            <div class="katalog-udvalgt-inner">
+                <div class="udvalgt-layout">
+                    <!-- Left column: Header + 2 square products -->
+                    <div class="udvalgt-left">
+                        <div class="udvalgt-header">
+                            <h2 id="udvalgt-title" class="udvalgt-title">Udvalgt til dig</h2>
+                            <p class="udvalgt-intro">Et udvalg af hestesmykker, sammensat med blik for form, ro og balance. Smykker i dansk design, der passer naturligt ind i dit univers.</p>
+                        </div>
+                        <div class="udvalgt-small-products">
+                            <article class="udvalgt-item udvalgt-item-small">
+                                <img src="img/udvalgt-fidelite.png" alt="Fidélité broche - Loyalitet hestesmykke fra Maison d'Aure i sterlingsølv eller guld" width="282" height="282">
+                                <div class="udvalgt-product-info">
+                                    <span class="udvalgt-product-name">Fidélité - Loyalitet Broche</span>
+                                    <span class="udvalgt-product-price">995 DKK*</span>
+                                </div>
+                            </article>
+                            <article class="udvalgt-item udvalgt-item-small">
+                                <img src="img/udvalgt-lelien.png" alt="Le Lien broche - Båndet hestesmykke med ægte minediamanter fra Maison d'Aure i 14K guld" width="282" height="282">
+                                <div class="udvalgt-product-info">
+                                    <span class="udvalgt-product-name">Le Lien - Båndet Broche</span>
+                                    <span class="udvalgt-product-price">6.500 DKK*</span>
+                                </div>
+                            </article>
+                        </div>
                     </div>
-                    <div class="udvalgt-small-products">
-                        <div class="udvalgt-item udvalgt-item-small">
-                            <img src="img/udvalgt-fidelite.png" alt="Fidélité">
+                    <!-- Right column: 2 tall products -->
+                    <div class="udvalgt-right">
+                        <article class="udvalgt-item udvalgt-item-tall">
+                            <img src="img/udvalgt-cercle.png" alt="Cercle d'Or halskæde - Gylden cirkel hestesmykke fra Maison d'Aure i 18K forgyldning" width="282" height="487">
                             <div class="udvalgt-product-info">
-                                <span class="udvalgt-product-name">Fidélité - Loyalitet Broche</span>
+                                <span class="udvalgt-product-name">Cercle d'Or - Gylden Cirkel Halskæde</span>
+                                <span class="udvalgt-product-price">795 DKK*</span>
+                            </div>
+                        </article>
+                        <article class="udvalgt-item udvalgt-item-tall udvalgt-item-rounded">
+                            <img src="img/udvalgt-gardien.png" alt="Gardien broche - Beskytter hestesmykke fra Maison d'Aure i sterlingsølv eller guld" width="282" height="487">
+                            <div class="udvalgt-product-info">
+                                <span class="udvalgt-product-name">Gardien - Beskytter Broche</span>
                                 <span class="udvalgt-product-price">995 DKK*</span>
                             </div>
-                        </div>
-                        <div class="udvalgt-item udvalgt-item-small">
-                            <img src="img/udvalgt-lelien.png" alt="Le Lien">
-                            <div class="udvalgt-product-info">
-                                <span class="udvalgt-product-name">Le Lien - Båndet Broche</span>
-                                <span class="udvalgt-product-price">6.500 DKK*</span>
+                        </article>
+                    </div>
+                </div>
+                <p class="udvalgt-disclaimer">Vejledende priser*</p>
+            </div>
+        </section>
+
+        <!-- 
+            DINERO KOLLEKTION SEKTION - Kommende kollektion
+            Viser Dinero kollektionen som er under udvikling
+            Struktur: Header med beskrivelse → Grid med "kommer snart" indhold
+        -->
+        <section class="katalog-collection dinero-collection" aria-labelledby="dinero-title">
+            <div class="katalog-collection-inner">
+                <header class="collection-header">
+                    <h2 id="dinero-title" class="collection-main-title">Dinero, når partnerskab bliver til bevægelse</h2>
+                    <p class="collection-intro">Nogle relationer opstår ikke af tryghed alene, men af tillid i bevægelse. Dinero-kollektionen er inspireret af det øjeblik, hvor menneske og hest arbejder som én. Hvor koncentration, teknik og følsomhed smelter sammen i et stille samarbejde.</p>
+                    <p class="collection-intro">Kollektionen er under udvikling og lanceres senere. De første glimt antyder et mere elegant og skulpturelt formsprog, hvor bevægelse og balance er i centrum.</p>
+                </header>
+
+                <div class="dinero-grid">
+                    <figure class="dinero-item dinero-item-1">
+                        <img src="img/katalog-dinero-blur2.png" alt="Dinero kollektionen - hestesmykker formet af samspil mellem hest og rytter i dressur" width="384" height="384">
+                        <figcaption class="dinero-text-overlay">
+                            <h3>Formet af samspil</h3>
+                            <p>Dinero-kollektionen tager udgangspunkt i dressurens præcision og lethed. Smykkerne er skabt med fokus på linjer, rytme og det usynlige bånd, der opstår, når tillid får lov at føre an.</p>
+                        </figcaption>
+                    </figure>
+                    <article class="dinero-item dinero-item-2">
+                        <div class="dinero-coming-soon">
+                            <img src="img/katalog-dinero-blur.png" alt="Dinero kollektionen kommer snart - ny kollektion af elegante hestesmykker under udvikling" width="384" height="384">
+                            <div class="coming-soon-overlay">
+                                <img src="img/katalog-vector.svg" alt="Hestesko ikon - symbol for Dinero kollektionen" class="coming-soon-icon" width="114" height="113">
+                                <h3>Ny kollektion<br>snart på vej</h3>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Right column: 2 tall products -->
-                <div class="udvalgt-right">
-                    <div class="udvalgt-item udvalgt-item-tall">
-                        <img src="img/udvalgt-cercle.png" alt="Cercle d'Or">
-                        <div class="udvalgt-product-info">
-                            <span class="udvalgt-product-name">Cercle d'Or - Gylden Cirkel Halskæde</span>
-                            <span class="udvalgt-product-price">795 DKK*</span>
-                        </div>
-                    </div>
-                    <div class="udvalgt-item udvalgt-item-tall udvalgt-item-rounded">
-                        <img src="img/udvalgt-gardien.png" alt="Gardien">
-                        <div class="udvalgt-product-info">
-                            <span class="udvalgt-product-name">Gardien - Beskytter Broche</span>
-                            <span class="udvalgt-product-price">995 DKK*</span>
-                        </div>
-                    </div>
+                    </article>
+                    <figure class="dinero-item dinero-item-3">
+                        <img src="img/katalog-img8156.png" alt="Dinero kollektionen på vej - elegante hestesmykker inspireret af dressur og partnerskab" width="384" height="792">
+                        <figcaption class="dinero-text-overlay dinero-text-bottom">
+                            <h3>En kollektion på vej</h3>
+                            <p>Dinero-kollektionen er planlagt, men endnu ikke produceret. Den er under udvikling med samme omhu, materialer og respekt for håndværket som resten af Maison d' Aures univers. Følg med, og vær blandt de første, der oplever kollektionen, når den lanceres.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="dinero-item dinero-item-4">
+                        <img src="img/katalog-img8160.png" alt="Dinero kollektionen - hestesmykker hvor ro og styrke mødes i elegant dansk design" width="792" height="384">
+                        <figcaption class="dinero-text-overlay">
+                            <h3>Når ro og styrke mødes</h3>
+                            <p>Dinero fortolker relationen mellem hest og rytter, når begge er til stede i nuet. Det er smykker inspireret af øjeblikke, hvor små signaler betyder alt, og hvor samarbejde bliver til en form for dans.</p>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
-            <p class="udvalgt-disclaimer">Vejledende priser*</p>
-        </div>
-    </section>
+        </section>
 
-    <!-- Dinero Collection Section -->
-    <section class="katalog-collection dinero-collection">
-        <div class="katalog-collection-inner">
-            <div class="collection-header">
-                <h2 class="collection-main-title">Dinero, når partnerskab bliver til bevægelse</h2>
-                <p class="collection-intro">Nogle relationer opstår ikke af tryghed alene, men af tillid i bevægelse. Dinero-kollektionen er inspireret af det øjeblik, hvor menneske og hest arbejder som én. Hvor koncentration, teknik og følsomhed smelter sammen i et stille samarbejde.</p>
-                <p class="collection-intro">Kollektionen er under udvikling og lanceres senere. De første glimt antyder et mere elegant og skulpturelt formsprog, hvor bevægelse og balance er i centrum.</p>
+        <!-- 
+            FOOTER - Kontaktinformation
+            Indeholder: Email, telefon, adresse og logo
+            ID: "kontakt" bruges til anchor links fra navigation
+        -->
+        <footer class="footer" id="kontakt" role="contentinfo">
+            <address class="footer-contact">
+                <h3 class="footer-contact-title">Kontaktinfo</h3>
+                <div class="footer-contact-info">
+                    <p>
+                        <a href="mailto:Maisondaure@mail.dk" aria-label="Send email til Maison d'Aure">Email: Maisondaure@mail.dk</a>
+                    </p>
+                    <p>
+                        <a href="tel:+4523122025" aria-label="Ring til Maison d'Aure">Telefonnummer: +45 23 12 20 25</a>
+                    </p>
+                    <p>
+                        Adresse: Smykkevej 1<br>1359, Nykøbing F
+                    </p>
+                </div>
+            </address>
+            <div class="footer-logo">
+                <img src="img/logo-footer.svg" alt="Maison d'Aure logo - Håndlavede hestesmykker i dansk design" width="180" height="122">
             </div>
-
-            <div class="dinero-grid">
-                <div class="dinero-item dinero-item-1">
-                    <img src="img/katalog-dinero-blur2.png" alt="Formet af samspil">
-                    <div class="dinero-text-overlay">
-                        <h3>Formet af samspil</h3>
-                        <p>Dinero-kollektionen tager udgangspunkt i dressurens præcision og lethed. Smykkerne er skabt med fokus på linjer, rytme og det usynlige bånd, der opstår, når tillid får lov at føre an.</p>
-                    </div>
-                </div>
-                <div class="dinero-item dinero-item-2">
-                    <div class="dinero-coming-soon">
-                        <img src="img/katalog-dinero-blur.png" alt="Ny kollektion snart på vej">
-                        <div class="coming-soon-overlay">
-                            <img src="img/katalog-vector.svg" alt="Horseshoe" class="coming-soon-icon">
-                            <h3>Ny kollektion<br>snart på vej</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="dinero-item dinero-item-3">
-                    <img src="img/katalog-img8156.png" alt="En kollektion på vej">
-                    <div class="dinero-text-overlay dinero-text-bottom">
-                        <h3>En kollektion på vej</h3>
-                        <p>Dinero-kollektionen er planlagt, men endnu ikke produceret. Den er under udvikling med samme omhu, materialer og respekt for håndværket som resten af Maison d' Aures univers. Følg med, og vær blandt de første, der oplever kollektionen, når den lanceres.</p>
-                    </div>
-                </div>
-                <div class="dinero-item dinero-item-4">
-                    <img src="img/katalog-img8160.png" alt="Når ro og styrke mødes">
-                    <div class="dinero-text-overlay">
-                        <h3>Når ro og styrke mødes</h3>
-                        <p>Dinero fortolker relationen mellem hest og rytter, når begge er til stede i nuet. Det er smykker inspireret af øjeblikke, hvor små signaler betyder alt, og hvor samarbejde bliver til en form for dans.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer" id="kontakt">
-        <div class="footer-contact">
-            <h5 class="footer-contact-title">Kontaktinfo</h5>
-            <div class="footer-contact-info">
-                <p>Email: Maisondaure@mail.dk</p>
-                <p>Telefonnummer: +45 23 12 20 25</p>
-                <p>Adresse: Smykkevej 1<br>1359, Nykøbing F</p>
-            </div>
-        </div>
-        <div class="footer-logo">
-            <img src="img/logo-footer.svg" alt="Maison d'Aure Logo">
-        </div>
-    </footer>
+        </footer>
     </main>
 </body>
 </html>
-

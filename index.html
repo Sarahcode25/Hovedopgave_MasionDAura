@@ -1,172 +1,247 @@
 <!DOCTYPE html>
+<!-- 
+    FORSIDE - Maison d'Aure
+    Hovedside med hero, om skaberen, udvalgte produkter, kollektioner og Instagram
+    Struktur: Header/Hero → Om skaberen → Udvalgte produkter → Kollektioner → Instagram → Footer
+-->
 <html lang="da">
 <head>
+    <!-- Basis HTML Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maison d'Aure - Smykker, der taler til hjertet</title>
+    
+    <!-- SEO Meta Tags - Forbedrer søgemaskineoptimering -->
+    <title>Maison d'Aure - Håndlavede Hestesmykker i Dansk Design</title>
+    <meta name="description" content="Maison d'Aure skaber håndlavede hestesmykker inspireret af båndet mellem rytter og hest. Udforsk vores Düval og Dineo kollektioner i sterlingsølv, guld og forgyldning.">
+    <meta name="keywords" content="hestesmykker, smykker til ryttere, dansk smykkedesign, håndlavede smykker, sterlingsølv, guld smykker, hestesmykker Danmark">
+    <meta name="author" content="Maison d'Aure">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.maisondaure.dk/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.maisondaure.dk/">
+    <meta property="og:title" content="Maison d'Aure - Håndlavede Hestesmykker i Dansk Design">
+    <meta property="og:description" content="Håndlavede hestesmykker inspireret af båndet mellem rytter og hest. Udforsk vores unikke kollektioner i sterlingsølv, guld og forgyldning.">
+    <meta property="og:image" content="https://www.maisondaure.dk/img/Logo.svg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.maisondaure.dk/">
+    <meta name="twitter:title" content="Maison d'Aure - Håndlavede Hestesmykker">
+    <meta name="twitter:description" content="Håndlavede hestesmykker inspireret af båndet mellem rytter og hest.">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main>
-    <!-- Header/Hero Section -->
-    <section class="header-section">
-        <!-- Navigation -->
-        <nav class="header-nav">
-            <a href="#kontakt" class="nav-link">Kontakt</a>
-            <div class="header-logo">
-                <img src="img/logo-header.svg" alt="Maison d'Aure Logo">
-            </div>
-            <a href="om-os.html" class="nav-link">Om os</a>
-        </nav>
-        
-        <!-- Hero Content -->
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">Smykker, der taler til hjertet</h1>
-                <a href="#kollektion" class="hero-button">
-                    <span class="hero-button-text">Se kollektion</span>
-                </a>
-            </div>
-            <div class="hero-images">
-                <div class="hero-image-1">
-                    <img src="img/hero-2.png" alt="Hestesko halskæde">
+        <!-- 
+            HEADER/HERO SEKTION - Hovedbanner med navigation
+            Indeholder: Navigation menu og hero indhold med tekst og billeder
+            Baggrund: langdigpagebg.png
+        -->
+        <header class="header-section" role="banner">
+            <!-- Navigation - Hovedmenu med links til kollektion og om os -->
+            <nav class="header-nav" role="navigation" aria-label="Hovednavigation">
+                <a href="katalog.html" class="nav-link">Kollektion</a>
+                <div class="header-logo">
+                    <a href="index.html" aria-label="Gå til forsiden">
+                        <img src="img/Logo.svg" alt="Maison d'Aure logo - Håndlavede hestesmykker i dansk design" width="134" height="91">
+                    </a>
                 </div>
-                <div class="hero-image-2">
-                    <img src="img/hero-1.png" alt="Smykker på træpæle">
+                <a href="om-os.html" class="nav-link">Om os</a>
+            </nav>
+            
+            <!-- Hero Indhold - Hovedoverskrift, CTA knap og hero billeder -->
+            <div class="hero-content">
+                <!-- Venstre side: Tekst og call-to-action knap -->
+                <div class="hero-text">
+                    <h1 class="hero-title">Smykker, der taler til hjertet</h1>
+                    <a href="katalog.html" class="hero-button" aria-label="Se vores kollektion af hestesmykker">
+                        <span class="hero-button-text">Se kollektion</span>
+                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Creator Section -->
-    <section class="about-section">
-        <h2 class="about-title">Mød skaberen bag brandet</h2>
-        <div class="about-content">
-            <div class="about-left">
-                <div class="about-images">
-                    <div class="about-image-1">
-                        <p class="about-quote">Forbindelsen, du ikke behøver at forklare.</p>
-                        <img src="img/about-2.png" alt="Ida med hest">
+                <!-- Højre side: To hero billeder (vender mod hinanden) -->
+                <div class="hero-images" aria-label="Hero billeder af hestesmykker">
+                    <div class="hero-image-1">
+                        <img src="img/hero-2.png" alt="Hestesko halskæde i guld på hvid baggrund - Maison d'Aure hestesmykker" width="400" height="600">
                     </div>
-                    <div class="about-image-2">
-                        <img src="img/about-1.png" alt="Ida med to heste">
+                    <div class="hero-image-2">
+                        <img src="img/hero-1.png" alt="Håndlavede hestesmykker arrangeret på træpæle - sterlingsølv og guld smykker" width="400" height="407">
                     </div>
                 </div>
-                <p class="about-text">
-                    Maison d'Aure er skabt af Ida inspireret af det stille bånd mellem rytter og hest og ønsket om at omsætte en forbindelse imellem hest og rytter med håndlavede smykker.
-                </p>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Featured Products Section -->
-    <section class="featured-section">
-        <h2 class="featured-title">Udvalgt til dig!</h2>
-        <div class="featured-grid">
-            <!-- Stort billede øverst venstre -->
-            <div class="featured-item featured-large">
-                <img src="img/featured-1.png" alt="Smykker på træpæle">
-            </div>
-            <!-- Højt smalt billede midt -->
-            <div class="featured-item featured-tall">
-                <img src="img/featured-2.png" alt="Smykker på træpæle">
-            </div>
-            <!-- Lille billede øverst højre -->
-            <div class="featured-item featured-small-top">
-                <img src="img/featured-3.png" alt="Guld hestesko ring">
-            </div>
-            <!-- Lille billede nederst venstre -->
-            <div class="featured-item featured-small-bottom">
-                <img src="img/featured-5.png" alt="Guld hestesko halskæde">
-            </div>
-            <!-- Tekst boks midt -->
-            <div class="featured-item featured-text">
-                <h3 class="craftsmanship-title">Håndværk der holder</h3>
-                <p class="craftsmanship-text">
-                    Vi arbejder i sterlingsølv, 14K guld og 18K forgyldning – altid nikkelfrit og afslibet i hånden for en blød, organisk fornemmelse. Udvalgte hestesmykker rummer ægte minediamanter, så dit smykke får et subtilt lys og kan følge dig i mange år.
-                </p>
-            </div>
-            <!-- Højt billede nederst højre -->
-            <div class="featured-item featured-tall-bottom">
-                <img src="img/featured-4.png" alt="Sølv hestesko halskæde">
-            </div>
-        </div>
-    </section>
-
-    <!-- Collections Section -->
-    <section class="collections-section">
-        <div class="collections-inner">
-            <h2 class="collections-title">Oplev vores unikke kollektioner</h2>
-            <div class="collections-grid">
-                <div class="collection-block">
-                    <div class="collection-image-container">
-                        <div class="collection-image-wrapper">
-                            <img src="img/collection-duval-main.png" alt="Duval Collection">
+        <!-- 
+            OM SKABEREN SEKTION - Ida Sofia
+            Introducerer grundlæggeren og brandets historie
+            Layout: Billeder til venstre, tekst til højre (på tablet/desktop)
+        -->
+        <section class="about-section" aria-labelledby="about-title">
+            <h2 id="about-title" class="about-title">Mød skaberen bag brandet</h2>
+            <div class="about-content">
+                <div class="about-left">
+                    <!-- Billeder af Ida med heste -->
+                    <div class="about-images">
+                        <div class="about-image-1">
+                            <blockquote class="about-quote" cite="Ida Sofia, grundlægger af Maison d'Aure">
+                                Forbindelsen, du ikke behøver at forklare.
+                            </blockquote>
+                            <img src="img/about-2.png" alt="Ida Sofia, grundlægger af Maison d'Aure, sammen med sin hest i stalden" width="300" height="400">
+                        </div>
+                        <div class="about-image-2">
+                            <img src="img/about-1.png" alt="Ida Sofia med to heste - skaberen bag Maison d'Aure hestesmykker" width="300" height="500">
                         </div>
                     </div>
-                    <h4 class="collection-title">Duval Kollektion</h4>
-                    <p class="collection-text">
-                        Düval kollektionen er en hyldest til den første hjertehest - ham, der gav dig tryghed, mod og tusind små hverdagseventyr.
-                        <br><br>
-                        Designet er roligt, afrundet og jordnært, ligesom den gamle ven i stalden, der altid stod klar ved bokslågen.
-                        <br><br>
-                        Hestesmykker til ryttere, der stadig bærer deres første hest med sig overalt.
-                    </p>
-                </div>
-
-                <div class="collection-block">
-                    <div class="collection-image-container">
-                        <div class="collection-image-wrapper">
-                            <img src="img/collection-dineo-main.png" alt="Dineo Collection">
-                        </div>
-                    </div>
-                    <h4 class="collection-title">Dineo Kollektion</h4>
-                    <p class="collection-text">
-                        Dineo kollektionen er inspireret af en særlig dressurhest med labrador-hjerte – følsom, modig og altid klar til at give lidt mere.
-                        <br><br>
-                        Kollektionen hylder de heste, der lærer os om styrke, sårbarhed og at rejse sig igen, når livet slår knuder.
-                        <br><br>
-                        Smykker til ryttere, der kender både glæden og sorgen ved at elske en hest.
+                    <p class="about-text">
+                        Maison d'Aure er skabt af Ida inspireret af det stille bånd mellem rytter og hest og ønsket om at omsætte en forbindelse imellem hest og rytter med håndlavede smykker.
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Instagram Section -->
-    <section class="instagram-section">
-        <h2 class="instagram-title">Følg os på instagram</h2>
-        <div class="instagram-grid">
-            <div class="instagram-image">
-                <img src="img/instagram-1.png" alt="Instagram 1">
+        <!-- 
+            UDVALGTE PRODUKTER SEKTION - Featured products
+            Viser udvalgte hestesmykker i et komplekst grid layout
+            Layout: Flexbox grid med forskellige størrelser (stor, lille, høj)
+        -->
+        <section class="featured-section" aria-labelledby="featured-title">
+            <h2 id="featured-title" class="featured-title">Udvalgt til dig!</h2>
+            <div class="featured-grid">
+                <div class="featured-grid-inner">
+                    <article class="featured-item featured-large">
+                        <img src="img/featured-1.png" alt="Udsnit af Maison d'Aure hestesmykker arrangeret på træpæle - sterlingsølv og guld smykker" width="600" height="450">
+                    </article>
+                    <div class="featured-grid-inner-small">
+                    <article class="featured-item featured-small-bottom">
+                        <img src="img/featured-5.png" alt="Guld hestesko halskæde fra Maison d'Aure - håndlavet smykke i 14K guld" width="100%" height="100%">
+                    </article>
+                    <!-- Tekstboks om håndværk og kvalitet -->
+                    <aside class="featured-item featured-text">
+                        <h3 class="craftsmanship-title">Håndværk der holder</h3>
+                        <p class="craftsmanship-text">
+                            Vi arbejder i sterlingsølv, 14K guld og 18K forgyldning som altid er nikkelfrit og afslibet i hånden for en blød, organisk fornemmelse. Udvalgte hestesmykker rummer ægte minediamanter, så dit smykke får et subtilt lys og kan følge dig i mange år.
+                        </p>
+                    </aside>
+                    </div>
+                </div>
+                <div class="featured-grid-innerbottom">
+                    <article class="featured-item featured-tall">
+                        <img src="img/featured-2.png" alt="Højt format billede af Maison d'Aure hestesmykker på træpæle - dansk smykkedesign" width="300" height="771">
+                    </article>
+                    <div class="featured-grid-inner-bottom">
+                    <article class="featured-item featured-small-top">
+                        <img src="img/featured-3.png" alt="Guld hestesko ring fra Maison d'Aure kollektionen - håndlavet smykke i 18K forgyldning" width="300" height="292">
+                    </article>
+                    <article class="featured-item featured-tall-bottom">
+                        <img src="img/featured-4.png" alt="Sølv hestesko halskæde fra Maison d'Aure - sterlingsølv smykke med organisk form" width="300" height="452">
+                    </article>
+                    </div>
+                </div>
             </div>
-            <div class="instagram-image">
-                <img src="img/instagram-2.png" alt="Instagram 2">
-            </div>
-            <div class="instagram-image">
-                <img src="img/instagram-3.png" alt="Instagram 3">
-            </div>
-        </div>
-        <p class="instagram-handle">@maison.d.aure</p>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer" id="kontakt">
-        <div class="footer-contact">
-            <h5 class="footer-contact-title">Kontaktinfo</h5>
-            <div class="footer-contact-info">
-                <p>Email: Maisondaure@mail.dk</p>
-                <p>Telefonnummer: +45 23 12 20 25</p>
-                <p>Adresse: Smykkevej 1<br>1359, Nykøbing F</p>
+        <!-- 
+            KOLLEKTIONER SEKTION - Düval og Dineo kollektioner
+            Viser de to hovedkollektioner med billeder og beskrivelser
+            ID: "kollektion" bruges til anchor links
+            Layout: 2-kolonne grid på desktop, 1 kolonne på mobil
+        -->
+        <section class="collections-section" id="kollektion" aria-labelledby="collections-title">
+            <div class="collections-inner">
+                <h2 id="collections-title" class="collections-title">Oplev vores unikke kollektioner</h2>
+                <div class="collections-grid">
+                    <article class="collection-block">
+                        <div class="collection-image-container">
+                            <div class="collection-image-wrapper">
+                                <img src="img/collection-duval-main.png" alt="Düval kollektionen - hestesmykker inspireret af den første hjertehest i bløde, jordnære former" width="480" height="360">
+                            </div>
+                        </div>
+                        <h3 class="collection-title">Duval Kollektion</h3>
+                        <p class="collection-text">
+                            Düval kollektionen er en hyldest til den første hjertehest - ham, der gav dig tryghed, mod og tusind små hverdagseventyr.
+                            <br><br>
+                            Designet er roligt, afrundet og jordnært, ligesom den gamle ven i stalden, der altid stod klar ved bokslågen.
+                            <br><br>
+                            Hestesmykker til ryttere, der stadig bærer deres første hest med sig overalt.
+                        </p>
+                    </article>
+
+                    <article class="collection-block">
+                        <div class="collection-image-container">
+                            <div class="collection-image-wrapper">
+                                <img src="img/collection-dineo-main.png" alt="Dineo kollektionen - elegante hestesmykker inspireret af dressur og partnerskab mellem hest og rytter" width="480" height="360">
+                            </div>
+                        </div>
+                        <h3 class="collection-title">Dineo Kollektion</h3>
+                        <p class="collection-text">
+                            Dineo kollektionen er inspireret af en særlig dressurhest med labrador-hjerte – følsom, modig og altid klar til at give lidt mere.
+                            <br><br>
+                            Kollektionen hylder de heste, der lærer os om styrke, sårbarhed og at rejse sig igen, når livet slår knuder.
+                            <br><br>
+                            Smykker til ryttere, der kender både glæden og sorgen ved at elske en hest.
+                        </p>
+                    </article>
+                </div>
             </div>
-        </div>
-        <div class="footer-logo">
-            <img src="img/logo-footer.svg" alt="Maison d'Aure Logo">
-        </div>
-    </footer>
+        </section>
+
+        <!-- 
+            INSTAGRAM SEKTION - Social media integration
+            Viser Instagram billeder og link til profil
+            Layout: 3-kolonne grid med Instagram billeder
+        -->
+        <section class="instagram-section" aria-labelledby="instagram-title">
+            <h2 id="instagram-title" class="instagram-title">Følg os på instagram</h2>
+            <div class="instagram-grid">
+                <article class="instagram-image">
+                    <img src="img/instagram-1.png" alt="Maison d'Aure hestesmykker fra Instagram - håndlavede smykker i dansk design" width="300" height="300">
+                </article>
+                <article class="instagram-image">
+                    <img src="img/instagram-2.png" alt="Maison d'Aure Instagram indhold - hestesmykker og rytterliv" width="300" height="300">
+                </article>
+                <article class="instagram-image">
+                    <img src="img/instagram-3.png" alt="Maison d'Aure Instagram feed - håndlavede hestesmykker i sterlingsølv og guld" width="300" height="300">
+                </article>
+            </div>
+            <p class="instagram-handle">
+                <a href="https://www.instagram.com/maison.d.aure/" target="_blank" rel="noopener noreferrer" aria-label="Følg Maison d'Aure på Instagram">@maison.d.aure</a>
+            </p>
+        </section>
+
+        <!-- 
+            FOOTER - Kontaktinformation
+            Indeholder: Email, telefon, adresse og logo
+            ID: "kontakt" bruges til anchor links fra navigation
+        -->
+        <footer class="footer" id="kontakt" role="contentinfo">
+            <address class="footer-contact">
+                <h3 class="footer-contact-title">Kontaktinfo</h3>
+                <div class="footer-contact-info">
+                    <p>
+                        <a href="mailto:Maisondaure@mail.dk" aria-label="Send email til Maison d'Aure">Email: Maisondaure@mail.dk</a>
+                    </p>
+                    <p>
+                        <a href="tel:+4523122025" aria-label="Ring til Maison d'Aure">Telefonnummer: +45 23 12 20 25</a>
+                    </p>
+                    <p>
+                        Adresse: Smykkevej 1<br>1359, Nykøbing F
+                    </p>
+                </div>
+            </address>
+            <div class="footer-logo">
+                <img src="img/logo-footer.svg" alt="Maison d'Aure logo - Håndlavede hestesmykker i dansk design" width="180" height="122">
+            </div>
+        </footer>
     </main>
 </body>
 </html>

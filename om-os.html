@@ -1,231 +1,308 @@
 <!DOCTYPE html>
+<!-- 
+    OM OS SIDE - Maison d'Aure
+    Fortæller historien bag brandet, Ida Sofia, og kollektionerne
+    Struktur: Header/Hero → Brand historie → Om Ida → Kollektioner historie → Kontakt → Butikker → Footer
+-->
 <html lang="da">
 <head>
+    <!-- Basis HTML Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om Os - Maison d'Aure</title>
+    
+    <!-- SEO Meta Tags - Forbedrer søgemaskineoptimering -->
+    <title>Om Os - Maison d'Aure | Historien Bag Hestesmykkerne</title>
+    <meta name="description" content="Lær historien bag Maison d'Aure og mød Ida Sofia, grundlæggeren. Opdag hvordan hestesmykkerne er inspireret af båndet mellem rytter og hest, og læs om Düval og Dineo kollektionerne.">
+    <meta name="keywords" content="Maison d'Aure historie, Ida Sofia, hestesmykker design, dansk smykkebrand, rytter smykker, hesteelsker smykker">
+    <meta name="author" content="Maison d'Aure">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.maisondaure.dk/om-os.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.maisondaure.dk/om-os.html">
+    <meta property="og:title" content="Om Os - Maison d'Aure | Historien Bag Hestesmykkerne">
+    <meta property="og:description" content="Lær historien bag Maison d'Aure og mød grundlæggeren Ida Sofia. Opdag hvordan hestesmykkerne er inspireret af båndet mellem rytter og hest.">
+    <meta property="og:image" content="https://www.maisondaure.dk/img/Logo.svg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Om Os - Maison d'Aure | Historien Bag Hestesmykkerne">
+    <meta name="twitter:description" content="Lær historien bag Maison d'Aure og mød grundlæggeren Ida Sofia.">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Barlow:wght@400;500;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main class="page-om-os">
-    <!-- Header/Hero Section -->
-    <section class="header-section">
-        <!-- Navigation -->
-        <nav class="header-nav">
-            <a href="#kontakt" class="nav-link">Kontakt</a>
-            <div class="header-logo">
-                <img src="img/logo-header.svg" alt="Maison d'Aure Logo">
-            </div>
-            <a href="index.html" class="nav-link">Forside</a>
-        </nav>
-        
-        <!-- Hero Content - Om Os Page Layout -->
-        <div class="about-hero-grid">
-            <div class="about-hero-left">
-                <p class="hero-tagline">Hvor begynder et smykke egentlig?</p>
-                <h1 class="hero-title hero-title-single">Bag om Maison d'Aure</h1>
-                <p class="hero-subtitle">I stalden, i relationen – og i historierne, der bliver båret videre.</p>
-                <div class="about-hero-main-image">
-                    <img src="img/about-hero-main.png" alt="Heste på mark">
+        <!-- 
+            HEADER/HERO SEKTION - Hovedbanner med navigation
+            Indeholder: Navigation menu og hero indhold med overskrift og billeder
+            Baggrund: langdigpagebg.png
+        -->
+        <header class="header-section" role="banner">
+            <!-- Navigation - Hovedmenu med links til kollektion og forside -->
+            <nav class="header-nav" role="navigation" aria-label="Hovednavigation">
+                <a href="katalog.html" class="nav-link">Kollektion</a>
+                <div class="header-logo">
+                    <a href="index.html" aria-label="Gå til forsiden">
+                        <img src="img/Logo.svg" alt="Maison d'Aure logo - Håndlavede hestesmykker i dansk design" width="134" height="91">
+                    </a>
                 </div>
-            </div>
-            <div class="about-hero-right">
-                <div class="about-hero-side-image">
-                    <img src="img/about-hero-side.png" alt="Ida med hest">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Brand Story Section -->
-    <section class="brand-story-section">
-        <div class="brand-story-content">
-            <!-- Øverste del: Titel + tekst (venstre) + Stald billede (højre) -->
-            <div class="brand-story-top">
-                <div class="brand-story-left">
-                    <h2 class="brand-story-title">Bag om brandet<br>– Maison d'Aure</h2>
-                    <p class="brand-story-subtitle">Bag om brandet</p>
-                    <p class="brand-story-text">
-                        Maison d'Aure er et dansk smykkebrand skabt til ryttere og hesteelskere, der ønsker smykker, som føles lige så ægte som båndet til deres hest. Brandet udspringer af et liv i stalden – af tidlige morgener, kolde ridebaner, varme muler og den særlige ro, der opstår, når man bare er sammen med sin hest.
-                    </p>
-                    <p class="brand-story-text">
-                        Hestesmykkerne fra Maison d'Aure er designet til at være subtile ledsagere i hverdagen. I stedet for tydelige hestemotiver bygger udtrykket på bløde linjer, organiske former og referencer til hestens bevægelse. Smykkerne er skabt til ryttere, der gerne vil bære deres historie med hesten tæt på huden, uden at det bliver dominerende eller "uniformsagtigt".
-                    </p>
-                </div>
-                <div class="brand-story-image-stald">
-                    <img src="img/brand-stald.png" alt="Stald med hestebokse">
-                </div>
-            </div>
-
-            <!-- Nederste del: Smykke billede + Guldsmed billede + Tekst -->
-            <div class="brand-story-bottom">
-                <div class="brand-story-image-tall">
-                    <img src="img/brand-story-1.png" alt="Smykker på rød baggrund">
-                </div>
-                <div class="brand-story-right">
-                    <div class="brand-story-image-wide">
-                        <img src="img/brand-story-3.png" alt="Guldsmed ved arbejde">
+                <a href="index.html" class="nav-link">Forside</a>
+            </nav>
+            
+            <!-- Hero Indhold - Overskrift, tagline og billeder -->
+            <div class="about-hero-grid">
+                <!-- Venstre side: Tagline, hovedoverskrift og hovedbillede -->
+                <div class="about-hero-left">
+                    <p class="hero-tagline">Hvor begynder et smykke egentlig?</p>
+                    <h1 class="hero-title hero-title-single">Bag om Maison d'Aure</h1>
+                    <p class="hero-subtitle">I stalden, i relationen – og i historierne, der bliver båret videre.</p>
+                    <div class="about-hero-main-image">
+                        <img src="img/about-hero-main.png" alt="Heste på grøn mark i sollys - inspirationen bag Maison d'Aure hestesmykker" width="690" height="380">
                     </div>
-                    <div class="brand-story-bottom-text">
+                </div>
+                <!-- Højre side: Sidebillede af Ida med hest -->
+                <div class="about-hero-right">
+                    <div class="about-hero-side-image">
+                        <img src="img/about-hero-side.png" alt="Ida Sofia, grundlægger af Maison d'Aure, sammen med sin hest - skaberen bag hestesmykkerne" width="282" height="583">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 
+            BRAND HISTORIE SEKTION - Historien bag Maison d'Aure
+            Fortæller om brandets vision, designfilosofi og håndværk
+            Layout: Grid med tekst og billeder
+        -->
+        <section class="brand-story-section" aria-labelledby="brand-story-title">
+            <div class="brand-story-content">
+                <!-- Top sektion: Tekst til venstre, staldbillede til højre -->
+                <div class="brand-story-top">
+                    <article class="brand-story-left">
+                        <h2 id="brand-story-title" class="brand-story-title">Bag om brandet<br>– Maison d'Aure</h2>
+                        <p class="brand-story-subtitle">Bag om brandet</p>
                         <p class="brand-story-text">
-                            Maison d'Aures smykker til ryttere kan bæres både i stalden, på arbejde og til særlige anledninger. De er tænkt som små, tidløse stykker dansk design, der kan følge dig gennem mange år – og som hver især rummer en fortælling om nærvær, samhørighed og stille styrke.
+                            Maison d'Aure er et dansk smykkebrand skabt til ryttere og hesteelskere, der ønsker smykker, som føles lige så ægte som båndet til deres hest. Brandet udspringer af et liv i stalden – af tidlige morgener, kolde ridebaner, varme muler og den særlige ro, der opstår, når man bare er sammen med sin hest.
                         </p>
                         <p class="brand-story-text">
-                            Brandets ambition er ikke at være størst, men at være nærværende. Maison d'Aure ønsker at opbygge et lille, men stærkt univers af hestesmykker, hvor hvert design er formgivet med omtanke, og hvor relationen mellem hest og menneske altid er udgangspunktet.
+                            Hestesmykkerne fra Maison d'Aure er designet til at være subtile ledsagere i hverdagen. I stedet for tydelige hestemotiver bygger udtrykket på bløde linjer, organiske former og referencer til hestens bevægelse. Smykkerne er skabt til ryttere, der gerne vil bære deres historie med hesten tæt på huden, uden at det bliver dominerende eller "uniformsagtigt".
+                        </p>
+                    </article>
+                    <div class="brand-story-image-stald">
+                        <img src="img/brand-stald.png" alt="Staldinteriør med hestebokse og halm - miljøet hvor Maison d'Aure hestesmykker er inspireret" width="384" height="430">
+                    </div>
+                </div>
+
+                <!-- Bottom sektion: Højt billede til venstre, bredt billede og tekst til højre -->
+                <div class="brand-story-bottom">
+                    <!-- Højt format produktbillede -->
+                    <div class="brand-story-image-tall">
+                        <img src="img/brand-story-1.png" alt="Maison d'Aure hestesmykker arrangeret på rød baggrund - håndlavede smykker i sterlingsølv og guld" width="383" height="624">
+                    </div>
+                    <div class="brand-story-right">
+                        <!-- Bredt format billede af guldsmed ved arbejde -->
+                        <div class="brand-story-image-wide">
+                            <img src="img/brand-story-3.png" alt="Guldsmed ved arbejde med håndlavning af Maison d'Aure hestesmykker - traditionelt håndværk" width="600" height="346">
+                        </div>
+                        <!-- Tekst om brandets mission og vision -->
+                        <div class="brand-story-bottom-text">
+                            <p class="brand-story-text">
+                                Maison d'Aures smykker til ryttere kan bæres både i stalden, på arbejde og til særlige anledninger. De er tænkt som små, tidløse stykker dansk design, der kan følge dig gennem mange år – og som hver især rummer en fortælling om nærvær, samhørighed og stille styrke.
+                            </p>
+                            <p class="brand-story-text">
+                                Brandets ambition er ikke at være størst, men at være nærværende. Maison d'Aure ønsker at opbygge et lille, men stærkt univers af hestesmykker, hvor hvert design er formgivet med omtanke, og hvor relationen mellem hest og menneske altid er udgangspunktet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            OM IDA SEKTION - Ida Sofia's historie
+            Fortæller om grundlæggeren, hendes baggrund og vision
+            Layout: Billede til venstre, tekst til højre (float layout)
+        -->
+        <section class="about-ida-section" aria-labelledby="about-ida-header">
+            <div class="about-ida-content">
+                <h2 id="about-ida-header" class="about-ida-header">OM IDA – KVINDEN BAG MAISON D'AURE</h2>
+                <div class="about-ida-text-wrap">
+                    <!-- Portrætbillede af Ida -->
+                    <div class="about-ida-image">
+                        <img src="img/about-ida.png" alt="Ida Sofia, grundlægger af Maison d'Aure, sammen med sin hest - rytter, kreativ formgiver og skaberen bag hestesmykkerne" width="188" height="250">
+                    </div>
+                    <p class="about-ida-text">
+                        Ida Sofia er grundlæggeren af Maison d'Aure. Hun er rytter, kreativ formgiver og uddannet folkeskolelærer – og har haft heste som en fast del af livet siden sine tidlige teenageår. Stalden har altid været det sted, hvor hun kunne trække vejret dybt, finde ro og bare være til stede.
+                    </p>
+                    <p class="about-ida-text">
+                        For Ida handler rytterlivet om langt mere end præstationer. Det handler om de små ritualer: at strigle i stilhed, lægge et dækken på, gå en tur i grime, mærke hestens åndedræt mod sin hånd. Det er øjeblikke som disse, hun forsøger at fange i smykkerne – gennem former, overflader og balancen mellem det rå og det raffinerede.
+                    </p>
+                    <p class="about-ida-text">
+                        Med Maison d'Aure ønsker Ida at skabe hestesmykker i dansk design, som voksne ryttere og hesteelskere kan spejle sig i. Smykker, der er en naturlig del af ens stil, ikke kun noget man tager på til særlige lejligheder. Hun samarbejder med dygtige guldsmede om at forene kvalitet, komfort og æstetik, så smykkerne både føles gode at bære og smukke at se på.
+                    </p>
+                    <p class="about-ida-text">
+                        For Ida er det største kompliment, når nogen siger, at et smykke "føles rigtigt" – som noget, de har manglet, uden helt at vide det. Det er netop den følelse, hun håber, at Maison d'Aures smykker kan give ryttere og hesteelskere: følelsen af at bære en lille del af deres egen historie.
+                    </p>
+                </div>
+
+                <!-- 
+                    MISSION/VISION BOX - Brandets mission og vision
+                    Viser brandets formål og fremtidige vision
+                    Layout: Box med mission og vision tekst
+                -->
+                <article class="mission-vision-box">
+                    <h3 class="mission-title">Mission</h3>
+                    <p class="mission-text">
+                        Maison d'Aures mission er at skabe smykker til ryttere og hesteelskere, som vil bære deres relation til hesten på en diskret, elegant måde. Smykkerne skal føles personlige, sanselige og langtidsholdbare – både i udtryk og kvalitet.
+                    </p>
+                    <h3 class="vision-title">Vision</h3>
+                    <p class="vision-text">
+                        Visionen er at blive det naturlige valg, når man søger smykker til ryttere: et lille, fokuseret brand, der vægter nærhed, gennemtænkt design og respekt for den historie, hvert smykke bærer.
+                    </p>
+                    <p class="vision-text">
+                        Maison d'Aure skal vokse i roligt tempo, i takt med at flere ryttere får øje på et alternativ til både masseproducerede smykker og alt for åbenlyse "hestepige"-designs. I sidste ende handler alt om det samme: at give dig mulighed for at bære din hest med dig – også når du ikke står i stalden.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 
+            KOLLEKTIONER HISTORIE SEKTION - Düval og Dineo historier
+            Fortæller historien bag hver kollektion
+            Layout: Alternerende layout (tekst-billede, billede-tekst)
+        -->
+        <section class="collections-story-section" aria-labelledby="collections-story-title">
+            <div class="collections-story-content">
+                <header class="collections-story-header">
+                    <h2 id="collections-story-title" class="collections-story-title">OM DÜVAL & DINEO</h2>
+                    <p class="collections-story-subtitle">HISTORIERNE BAG KOLLEKTIONERNE</p>
+                </header>
+
+                <!-- Düval kollektion historie - Tekst til venstre, billede til højre -->
+                <article class="collection-story-block">
+                    <div class="collection-story-text">
+                        <h3>Düval</h3>
+                        <p>
+                            Düval kollektionen er opkaldt efter en rød vallak, som blev en central del af Idas opvækst. Han var den slags hest, man lærte alt med: de første lange ture, de første rigtige ansvarsfølelser og de mange timer, hvor stalden føltes mere hjemme end noget andet sted.
+                        </p>
+                        <p>
+                            Düval var rolig, egenrådig og fuld af personlighed – en rigtig makker. Smykkerne i Düval kollektionen er inspireret af den følelse af jordnær tryghed og hverdagsfællesskab. Former og detaljer er bløde og afrundede, med et lidt mere organisk, "varmt" udtryk. De er skabt til ryttere, der bærer deres første hjertehest med sig, også længe efter livet er gået videre.
                         </p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Om Ida Section -->
-    <section class="about-ida-section">
-        <div class="about-ida-content">
-            <h3 class="about-ida-header">OM IDA – KVINDEN BAG MAISON D'AURE</h3>
-            <div class="about-ida-text-wrap">
-                <div class="about-ida-image">
-                    <img src="img/about-ida.png" alt="Ida med hest">
-                </div>
-                <p class="about-ida-text">
-                    Ida Sofia er grundlæggeren af Maison d'Aure. Hun er rytter, kreativ formgiver og uddannet folkeskolelærer – og har haft heste som en fast del af livet siden sine tidlige teenageår. Stalden har altid været det sted, hvor hun kunne trække vejret dybt, finde ro og bare være til stede.
-                </p>
-                <p class="about-ida-text">
-                    For Ida handler rytterlivet om langt mere end præstationer. Det handler om de små ritualer: at strigle i stilhed, lægge et dækken på, gå en tur i grime, mærke hestens åndedræt mod sin hånd. Det er øjeblikke som disse, hun forsøger at fange i smykkerne – gennem former, overflader og balancen mellem det rå og det raffinerede.
-                </p>
-                <p class="about-ida-text">
-                    Med Maison d'Aure ønsker Ida at skabe hestesmykker i dansk design, som voksne ryttere og hesteelskere kan spejle sig i. Smykker, der er en naturlig del af ens stil, ikke kun noget man tager på til særlige lejligheder. Hun samarbejder med dygtige guldsmede om at forene kvalitet, komfort og æstetik, så smykkerne både føles gode at bære og smukke at se på.
-                </p>
-                <p class="about-ida-text">
-                    For Ida er det største kompliment, når nogen siger, at et smykke "føles rigtigt" – som noget, de har manglet, uden helt at vide det. Det er netop den følelse, hun håber, at Maison d'Aures smykker kan give ryttere og hesteelskere: følelsen af at bære en lille del af deres egen historie.
-                </p>
-            </div>
-
-            <!-- Mission/Vision Box -->
-            <div class="mission-vision-box">
-                <h4 class="mission-title">Mission</h4>
-                <p class="mission-text">
-                    Maison d'Aures mission er at skabe smykker til ryttere og hesteelskere, som vil bære deres relation til hesten på en diskret, elegant måde. Smykkerne skal føles personlige, sanselige og langtidsholdbare – både i udtryk og kvalitet.
-                </p>
-                <h4 class="vision-title">Vision</h4>
-                <p class="vision-text">
-                    Visionen er at blive det naturlige valg, når man søger smykker til ryttere: et lille, fokuseret brand, der vægter nærhed, gennemtænkt design og respekt for den historie, hvert smykke bærer.
-                </p>
-                <p class="vision-text">
-                    Maison d'Aure skal vokse i roligt tempo, i takt med at flere ryttere får øje på et alternativ til både masseproducerede smykker og alt for åbenlyse "hestepige"-designs. I sidste ende handler alt om det samme: at give dig mulighed for at bære din hest med dig – også når du ikke står i stalden.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Collections Story Section -->
-    <section class="collections-story-section">
-        <div class="collections-story-content">
-            <div class="collections-story-header">
-                <h2 class="collections-story-title">OM DÜVAL & DINEO</h2>
-                <p class="collections-story-subtitle">HISTORIERNE BAG KOLLEKTIONERNE</p>
-            </div>
-
-            <!-- Düval Block -->
-            <div class="collection-story-block">
-                <div class="collection-story-text">
-                    <h3>Düval</h3>
-                    <p>
-                        Düval kollektionen er opkaldt efter en rød vallak, som blev en central del af Idas opvækst. Han var den slags hest, man lærte alt med: de første lange ture, de første rigtige ansvarsfølelser og de mange timer, hvor stalden føltes mere hjemme end noget andet sted.
-                    </p>
-                    <p>
-                        Düval var rolig, egenrådig og fuld af personlighed – en rigtig makker. Smykkerne i Düval kollektionen er inspireret af den følelse af jordnær tryghed og hverdagsfællesskab. Former og detaljer er bløde og afrundede, med et lidt mere organisk, "varmt" udtryk. De er skabt til ryttere, der bærer deres første hjertehest med sig, også længe efter livet er gået videre.
-                    </p>
-                </div>
-                <div class="collection-story-image">
-                    <img src="img/duval-image.png" alt="Düval kollektionen">
-                </div>
-            </div>
-
-            <!-- Dineo Block -->
-            <div class="collection-story-block reverse">
-                <div class="collection-story-text">
-                    <h3>Dineo</h3>
-                    <p>
-                        Dineo kollektionen er inspireret af en følsom, talentfuld dressurhest, der blev et vendepunkt i Idas liv som rytter. Hvor Düval repræsenterer den trygge base, repræsenterer Dineo udvikling, forfinelse og det tætte partnerskab, der opstår, når rytter og hest virkelig begynder at forstå hinanden.
-                    </p>
-                    <p>
-                        Designet i Dineo kollektionen elegant, med klare linjer og referencer til dressurens bevægelser. Smykkerne er tænkt til ryttere, der genkender følelsen af koncentration, tillid og den stille, men intense kontakt, der kan opstå i et samarbejde mellem hest og menneske.
-                    </p>
-                    <p>
-                        Sammen udgør Düval kollektionen og Dineo kollektionen to sider af samme historie: den jordbundne staldfølelse og den forfinede partnerskabsfølelse – begge lige vigtige i rytterlivet.
-                    </p>
-                </div>
-                <div class="collection-story-image dineo-image">
-                    <img src="img/dineo-image.png" alt="Dineo kollektionen">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section" id="kontakt">
-        <div class="contact-content">
-            <h2 class="contact-title">Kontakt os</h2>
-            <div class="contact-boxes">
-                <div class="contact-box">
-                    <h3>Kontaktoplysninger</h3>
-                    <p>+45 23 12 20 25</p>
-                    <p>Åbningstider man-fre 9-17</p>
-                </div>
-                <div class="contact-box contact-box-right">
-                    <h3>Skriv til os her</h3>
-                    <p>Vi svarer inden for 24timer!</p>
-                    <p>maisondaure@mail.dk</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stores Section -->
-    <section class="stores-section">
-        <div class="stores-content">
-            <div class="stores-header">
-                <h2>Butikker</h2>
-                <p>Kom forbi vores butik. Du kan finde os i Nykøbing og Maribo.</p>
-            </div>
-            <div class="stores-grid">
-                <div class="store-card store-maribo">
-                    <img src="img/store-maribo.png" alt="Maribo butik">
-                    <div class="store-info">
-                        <h3>Maribo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien.</p>
+                    <div class="collection-story-image">
+                        <img src="img/duval-image.png" alt="Düval kollektionen - hestesmykker inspireret af den første hjertehest i bløde, jordnære former" width="384" height="500">
                     </div>
-                </div>
-                <div class="store-card store-nykobing">
-                    <img src="img/store-nykobing.png" alt="Nykøbing butik">
-                    <div class="store-info">
-                        <h3>Nykøbing</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                </article>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-contact">
-            <h5 class="footer-contact-title">Kontaktinfo</h5>
-            <div class="footer-contact-info">
-                <p>Email: Maisondaure@mail.dk</p>
-                <p>Telefonnummer: +45 23 12 20 25</p>
-                <p>Adresse: Smykkevej 1<br>1359, Nykøbing F</p>
+                <!-- Dineo kollektion historie - Billede til venstre, tekst til højre (reverse layout) -->
+                <article class="collection-story-block reverse">
+                    <div class="collection-story-text">
+                        <h3>Dineo</h3>
+                        <p>
+                            Dineo kollektionen er inspireret af en følsom, talentfuld dressurhest, der blev et vendepunkt i Idas liv som rytter. Hvor Düval repræsenterer den trygge base, repræsenterer Dineo udvikling, forfinelse og det tætte partnerskab, der opstår, når rytter og hest virkelig begynder at forstå hinanden.
+                        </p>
+                        <p>
+                            Designet i Dineo kollektionen elegant, med klare linjer og referencer til dressurens bevægelser. Smykkerne er tænkt til ryttere, der genkender følelsen af koncentration, tillid og den stille, men intense kontakt, der kan opstå i et samarbejde mellem hest og menneske.
+                        </p>
+                        <p>
+                            Sammen udgør Düval kollektionen og Dineo kollektionen to sider af samme historie: den jordbundne staldfølelse og den forfinede partnerskabsfølelse – begge lige vigtige i rytterlivet.
+                        </p>
+                    </div>
+                    <div class="collection-story-image dineo-image">
+                        <img src="img/dineo-image.png" alt="Dineo kollektionen - elegante hestesmykker inspireret af dressur og partnerskab mellem hest og rytter" width="336" height="371">
+                    </div>
+                </article>
             </div>
-        </div>
-        <div class="footer-logo">
-            <img src="img/logo-dark.svg" alt="Maison d'Aure Logo">
-        </div>
-    </footer>
+        </section>
+
+        <!-- 
+            KONTAKT SEKTION - Kontaktinformation
+            Viser telefon, email og åbningstider
+            ID: "kontakt" bruges til anchor links fra navigation
+            Layout: 2-kolonne grid med kontaktbokse
+        -->
+        <section class="contact-section" id="kontakt" aria-labelledby="contact-title">
+            <div class="contact-content">
+                <h2 id="contact-title" class="contact-title">Kontakt os</h2>
+                <div class="contact-boxes">
+                    <address class="contact-box">
+                        <h3>Kontaktoplysninger</h3>
+                        <p>
+                            <a href="tel:+4523122025" aria-label="Ring til Maison d'Aure">+45 23 12 20 25</a>
+                        </p>
+                        <p>Åbningstider man-fre 9-17</p>
+                    </address>
+                    <address class="contact-box contact-box-right">
+                        <h3>Skriv til os her</h3>
+                        <p>Vi svarer inden for 24timer!</p>
+                        <p>
+                            <a href="mailto:maisondaure@mail.dk" aria-label="Send email til Maison d'Aure">maisondaure@mail.dk</a>
+                        </p>
+                    </address>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            BUTIKKER SEKTION - Fysiske butikker
+            Viser information om butikkerne i Nykøbing og Maribo
+            Layout: 2-kolonne grid med butik kort
+        -->
+        <section class="stores-section" aria-labelledby="stores-title">
+            <div class="stores-content">
+                <header class="stores-header">
+                    <h2 id="stores-title">Butikker</h2>
+                    <p>Kom forbi vores butik. Du kan finde os i Nykøbing og Maribo.</p>
+                </header>
+                <div class="stores-grid">
+                    <article class="store-card store-maribo">
+                        <img src="img/store-maribo.png" alt="Maison d'Aure butik i Maribo - fysisk butik hvor du kan se og købe hestesmykker" width="600" height="521">
+                        <div class="store-info">
+                            <h3>Maribo</h3>
+                            <p>Besøg vores butik i Maribo og oplev vores håndlavede hestesmykker i virkeligheden.</p>
+                        </div>
+                    </article>
+                    <article class="store-card store-nykobing">
+                        <img src="img/nykøbingfalsterButik.jpg" alt="Maison d'Aure butik i Nykøbing - fysisk butik med hestesmykker i sterlingsølv og guld" width="600" height="521">
+                        <div class="store-info">
+                            <h3>Nykøbing</h3>
+                            <p>Besøg vores butik i Nykøbing og udforsk vores Düval og Dineo kollektioner.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" role="contentinfo">
+            <address class="footer-contact">
+                <h3 class="footer-contact-title">Kontaktinfo</h3>
+                <div class="footer-contact-info">
+                    <p>
+                        <a href="mailto:Maisondaure@mail.dk" aria-label="Send email til Maison d'Aure">Email: Maisondaure@mail.dk</a>
+                    </p>
+                    <p>
+                        <a href="tel:+4523122025" aria-label="Ring til Maison d'Aure">Telefonnummer: +45 23 12 20 25</a>
+                    </p>
+                    <p>
+                        Adresse: Smykkevej 1<br>1359, Nykøbing F
+                    </p>
+                </div>
+            </address>
+            <div class="footer-logo">
+                <img src="img/logo-dark.svg" alt="Maison d'Aure logo - Håndlavede hestesmykker i dansk design" width="180" height="122">
+            </div>
+        </footer>
     </main>
 </body>
 </html>
-
